@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Japan's Nuclear Output",
+      "anchor": "start",
+      "subtitle": "GWh | IEA via ECO-API",
+      "fontSize": "14",
+      "subtitleFontSize": "12",
+      "color": "#000000",
+      "subtitleColor": "#000000"
+    },
+    "height": "250",
+    "width": 500,
+    "autosize": {
+      "type": "fit",
+      "contains": "padding"
+    },
+    "background": "#ffffff",
+    "view": {
+      "fill": "#ffffff",
+      "strokeOpacity": 0
+    },
+    "data": {
+      "url": "https://api.economicsobservatory.com/jpn/nGwh?vega",
+      "format": {
+        "type": "json"
+      }
+    },
+    "mark": {
+      "type": "line",
+      "color": "#0a06e7",
+      "strokeWidth": "3"
+    },
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {
+          "title": "",
+          "titleColor": "#122B39",
+          "grid": false
+        }
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "axis": {
+          "title": "",
+          "titleColor": "#122B39",
+          "grid": false
+        }
+      }
+    }
+  }

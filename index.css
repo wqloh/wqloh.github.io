@@ -67,23 +67,9 @@ img {
 }
 
 /* Putting sections side by side */
-#container {
-  height: 100%;
-  width: 100%;
+.container {
   display: flex;
-}
-#leftThing {
-  width: 33%;
-}
-#middleThing {
-  width: 34%;
-}
-#rightThing {
-  width: 33%;
-}
-#topThing {
-  height: 50%;
-}
-#bottomThing {
-  height: 50%;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: left;
 }

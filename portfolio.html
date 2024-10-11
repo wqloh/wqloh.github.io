@@ -1,0 +1,147 @@
+<!-- This HTML file provides a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
+<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
+<!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
+<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
+
+<!-- Take a look around and make your own copy to adapt for your own use. -->
+
+<!-- This is a comment -->
+<!-- Comments are not displayed in the browser -->
+<!-- They can be used to leave notes in the code -->
+
+<!DOCTYPE html>
+<html> 
+    <!-- HTML is heirarchial: tags like this define elements on the page. 
+    Each tag does something different. For example:
+        - The <html> tag defines the whole document.
+        - The <h1> tag defines a large heading
+        - The <p> tag defines a paragraph
+        - Tags appear as an opening <div> and closing </div> pair
+    -->
+
+<head>    
+    <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
+
+    <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
+    <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Portfolio Challenges</title> <!-- The title displayed in the browser tab, not on the page itself -->
+
+    <!-- This is a link to the vega-lite which we're using to make graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+    <style>
+        #chartGrid {
+            display: flex;
+        }
+        
+    </style>
+</head>
+
+<body>
+<!-- The body tag contains the elements that visitors to our page will see. -->
+    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+        <!-- This is a header, it is the largest text on the page -->
+        Data Visualisation Autumn Term 24/25
+    </h1>
+    <p style="margin-top: 0px; color: darkblue">
+        <!-- we're setting the margin to 0px so the header and authour name are close together -->
+        Wen Qi LOH
+    </p>
+
+    <nav style="text-align: center;">
+        <a href="index.html">Home</a> |   
+        <a href="portfolio.html">Portfolio</a> |    
+        <a href="others.html">Other Class Exercises</a> |        
+        <a href="https://github.com/wqloh">GitHub</a>
+        </nav>
+       
+<h2>Challenge 1: Hosting</h2>
+    <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: GDP & Life Expectancy</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Life expectancy has a strong linear correlation with GDP per capita across all continents.
+            </p>
+        </div>
+        <figure id="gdp_lifeexpec"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: Declining Populations</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                The populations of many advanced economies around the world are projected to decline in the coming decades leading up to 2100.
+            </p>
+        </div>
+        <figure id="declining_pop"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 3: Olympics Representation</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Countries like Pakistan and Myanmar have disproportionately few athletes for their large population sizes relative to the rest of the world. 
+            </p>
+        </div>
+        <figure id="olympics_rep"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 4: VAT across Europe</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                A common gripe of consumers in the UK, but compared with the rest of Europe, a VAT of 20% turns out to be pretty standard.
+            </p>
+        </div>
+        <figure id="vat"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <h2>Challenge 2: Building</h2>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: Japan's Nuclear Output</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                The 2011 Fukushima Nuclear Disaster was a critical turning point in Japan's nuclear strategy. Its nuclear generation has returned nowhere near pre-disaster levels.
+            </p>
+        </div>
+        <figure id="nuclear_japan"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: China's Renewable Energy Output</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                There has been a massive and sustained push for renewable energy generation in China, with increasing year-on-year output levels.
+            </p>
+        </div>
+        <figure id="renewables_china"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+
+    <script>
+ // Define graphs that we want as variables linked to JSON files       
+        let fig_1 = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json" // We're storing the URL of the graph we want to display in a variable
+        let fig_2 = "wk1_declining_pop.json" 
+        let fig_3 = "wk1_olympics_rep.json"   
+        let fig_4 = "wk1_vat.json"
+        let fig_5 = "wk2_nuclear_japan.json"
+        let fig_6 = "wk2_renewables_china.json"
+
+// Embed graphs in the divs above
+        vegaEmbed('#gdp_lifeexpec', fig_1) // We're using the vegaEmbed function to put a graph in the element with id fig_1
+        vegaEmbed('#declining_pop', fig_2)        
+        vegaEmbed('#declining_pop', fig_2)
+        vegaEmbed('#olympics_rep', fig_3)
+        vegaEmbed('#vat', fig_4)
+        vegaEmbed('#nuclear_japan', fig_5)
+        vegaEmbed('#renewables_china', fig_6)
+    </script>
+</body>
+    
+</html>

@@ -116,6 +116,19 @@
         </div>
         <figure id="renewables_china"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
+
+    <h2>Other Class Exercises</h2>
+
+    <section>
+        <div class="chart-description">
+            <h3>Week 2, Graph 1: Vices Spending</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                
+            </p>
+        </div>
+        <figure id="vices_spending"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
         <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
@@ -132,6 +145,7 @@
         let figure_4_spec = "wk1_vat.json"
         let figure_5_spec = "wk2_nuclear_japan.json"
         let figure_6_spec = "wk2_renewables_china.json"
+        let figure_7_spec = "wk2_vices_spending.json"
        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
         vegaEmbed('#gdp_lifeexpec', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
@@ -140,6 +154,7 @@ vegaEmbed('#olympics_rep', figure_3_spec)
 vegaEmbed('#vat', figure_4_spec)
 vegaEmbed('#nuclear_japan', figure_5_spec)
 vegaEmbed('#renewables_china', figure_6_spec)
+vegaEmbed('#vices_spending', figure_7_spec)
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
         // e.g. 

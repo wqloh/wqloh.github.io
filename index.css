@@ -65,3 +65,25 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Putting sections side by side */
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#leftThing {
+  width: 33%;
+}
+#middleThing {
+  width: 34%;
+}
+#rightThing {
+  width: 33%;
+}
+#topThing {
+  height: 50%;
+}
+#bottomThing {
+  height: 50%;
+}

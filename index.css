@@ -69,11 +69,8 @@ img {
 /* Putting sections side by side */
 .container {
   display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  column-gap: 20px;
-  margin-top: 15px;
-  padding-top: 0px;
-  padding-bottom: 10px;
-  align-content: center;
+  justify-content: space-around;
+}
+.chart {
+  width: 30%;
 }

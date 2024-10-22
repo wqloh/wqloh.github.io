@@ -38,21 +38,72 @@
             <a href="others.html">Other Class Exercises</a> |        
             <a href="https://github.com/wqloh">GitHub</a>
          </nav>
-<body>
+
+         <h2>Week 1</h2>
+         <section>
+            <div class="chart-description">
+                <h3>Graph 1: GDP & Life Expectancy</h3>
+                <p> 
+                    Life expectancy has a strong linear correlation with GDP per capita across all continents.
+                </p>
+            </div>
+            <figure id="gdp_lifeexpec"></figure>
+        </section>
+    
+    
+        <section>
+            <div class="chart-description">
+                <h3>Graph 2: Declining Populations</h3>
+                <p> 
+                    The populations of many advanced economies around the world are projected to decline in the coming decades leading up to 2100.
+                </p>
+            </div>
+            <figure id="declining_pop"></figure> 
+        </section>
+
     <h2>Week 2</h2>
     <section>
         <div class="chart-description">
             <h3>Graph 1: Vices Spending</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            <p> 
                 Where did they get the numbers for narcotics spending? 👀
             </p>
         </div>
-        <figure id="vices_spending"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="vices_spending"></figure>
+    </section>
+
+    <h2>Week 3</h2>
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: Anscombe</h3>
+            <p> 
+                Test
+            </p>
+        </div>
+        <figure id="anscombe"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: Goods & Services</h3>
+            <p> 
+                Created with Python Colab
+            </p>
+        </div>
+        <figure id="colab"></figure>
     </section>
 
     <script>
-    let figure_1_spec = "wk2_vices_spending.json"
-    vegaEmbed('#vices_spending', figure_1_spec)
+    let fig_1 = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"
+    let fig_2 = "wk1_declining_pop.json"  
+    let fig_3 = "wk2_vices_spending.json"
+    let fig_4 = "wk3_anscombe.json"
+    let fig_5 = "wk3_goods_services_colab.json"
+    vegaEmbed('#gdp_lifeexpec', fig_1)
+    vegaEmbed('#declining_pop', fig_2)
+    vegaEmbed('#vices_spending', fig_3)
+    vegaEmbed('#anscombe', fig_4)
+    vegaEmbed('#colab', fig_5)
     </script>
 
 </body>  

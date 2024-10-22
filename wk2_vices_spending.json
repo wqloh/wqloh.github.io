@@ -1,31 +1,29 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data":{
+  "data": {
     "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/vices_spending.csv"
   },
-  "mark":{
-    "type":"line"
-  },
-  "title":{
+  "mark": {"type": "line"},
+  "width": 500,
+  "height": 350,
+  "title": {
     "text": "Vice spending",
-    "subtitle":"Spending (millions of pounds) on alcohol, tobacco and narcotics, Source: ONS"
+    "subtitle": 
+      ["Spending (millions of pounds) on alcohol, tobacco and narcotics", "Source: ONS"]
   },
-  "encoding":{
-    "x":{
+  "encoding": {
+    "x": {
       "field": "date",
       "type": "temporal",
       "title": "",
-      "axis": {
-        "grid": false
-      }
-  },
-  "y":{
-    "field":"value",
-    "type": "quantitative",
-    "title": ""
-  },
-  "color":{
-    "field":"series"
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"labelExpr": "'£' + datum.label + 'M'"}
+    },
+    "color": {"field": "series", "legend": {"title": "", "orient": "top"}}
   }
-}
 }

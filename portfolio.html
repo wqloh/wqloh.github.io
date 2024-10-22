@@ -57,90 +57,86 @@
         <a href="others.html">Other Class Exercises</a> |        
         <a href="https://github.com/wqloh">GitHub</a>
         </nav>
-       
-<h2>Challenge 1: Hosting</h2>
-    <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
-    <section>
-        <div class="chart-description">
-            <h3>Graph 1: GDP & Life Expectancy</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Life expectancy has a strong linear correlation with GDP per capita across all continents.
-            </p>
-        </div>
-        <figure id="gdp_lifeexpec"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
 
-
-    <section>
-        <div class="chart-description">
-            <h3>Graph 2: Declining Populations</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                The populations of many advanced economies around the world are projected to decline in the coming decades leading up to 2100.
-            </p>
-        </div>
-        <figure id="declining_pop"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
-
-    <section>
-        <div class="chart-description">
-            <h3>Graph 3: Olympics Representation</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Countries like Pakistan and Myanmar have disproportionately few athletes for their large population sizes relative to the rest of the world. 
-            </p>
-        </div>
-        <figure id="olympics_rep"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
-
-    <section>
-        <div class="chart-description">
-            <h3>Graph 4: VAT across Europe</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                A common gripe of consumers in the UK, but compared with the rest of Europe, a VAT of 20% turns out to be pretty standard.
-            </p>
-        </div>
-        <figure id="vat"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
+        <h2>Challenge 1: Hosting</h2>
+        <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
+    
+        <section>
+            <div class="chart-description">
+                <h3>Graph 1: Olympics Representation</h3>
+                <p> 
+                    Countries like Pakistan and Myanmar have disproportionately few athletes for their large population sizes relative to the rest of the world. 
+                </p>
+            </div>
+            <figure id="olympics_rep"></figure> 
+        </section>
+    
+        <section>
+            <div class="chart-description">
+                <h3>Graph 2: VAT across Europe</h3>
+                <p> 
+                    A common gripe of consumers in the UK, but compared with the rest of Europe, a VAT of 20% turns out to be pretty standard.
+                </p>
+            </div>
+            <figure id="vat"></figure> 
+        </section>  
 
     <h2>Challenge 2: Building</h2>
 
     <section>
         <div class="chart-description">
             <h3>Graph 1: Japan's Nuclear Output</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            <p> 
                 The 2011 Fukushima Nuclear Disaster was a critical turning point in Japan's nuclear strategy. Its nuclear generation has returned nowhere near pre-disaster levels.
             </p>
         </div>
-        <figure id="nuclear_japan"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="nuclear_japan"></figure> 
     </section>
 
     <section>
         <div class="chart-description">
             <h3>Graph 2: China's Renewable Energy Output</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            <p> 
                 There has been a massive and sustained push for renewable energy generation in China, with increasing year-on-year output levels.
             </p>
         </div>
-        <figure id="renewables_china"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="renewables_china"></figure>
+    </section>
+
+    <h2>Challenge 3: Debating</h2>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: Test</h3>
+            <p> 
+                Test
+        </div>
+        <figure id="nuclear_japan"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: Test</h3>
+            <p> 
+                Test
+            </p>
+        </div>
+        <figure id="renewables_china"></figure> 
     </section>
 
 
     <script>
  // Define graphs that we want as variables linked to JSON files       
-        let fig_1 = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json" // We're storing the URL of the graph we want to display in a variable
-        let fig_2 = "wk1_declining_pop.json" 
-        let fig_3 = "wk1_olympics_rep.json"   
-        let fig_4 = "wk1_vat.json"
-        let fig_5 = "wk2_nuclear_japan.json"
-        let fig_6 = "wk2_renewables_china.json"
+        let fig_1 = "wk1_olympics_rep.json" // We're storing the URL of the graph we want to display in a variable
+        let fig_2 = "wk1_vat.json" 
+        let fig_3 = "wk2_nuclear_japan.json" 
+        let fig_4 = "wk2_renewables_china.json"
 
 // Embed graphs in the divs above
-        vegaEmbed('#gdp_lifeexpec', fig_1) // We're using the vegaEmbed function to put a graph in the element with id fig_1
-        vegaEmbed('#declining_pop', fig_2)        
-        vegaEmbed('#declining_pop', fig_2)
-        vegaEmbed('#olympics_rep', fig_3)
-        vegaEmbed('#vat', fig_4)
-        vegaEmbed('#nuclear_japan', fig_5)
-        vegaEmbed('#renewables_china', fig_6)
+        vegaEmbed('#olympics_rep', fig_1) // We're using the vegaEmbed function to put a graph in the element with id fig_1
+        vegaEmbed('#vat', fig_2)
+        vegaEmbed('#nuclear_japan', fig_3)
+        vegaEmbed('#renewables_china', fig_4)
     </script>
 </body>
     

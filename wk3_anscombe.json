@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+     "title": {
+        "text": "Anscombe Example",
+        "subtitle":["titles 1", "titles 2", "some more info here", ""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "subtitleColor":"black",
+        "anchor": "start",
+        "color": "black"},
+       
+    "data": {"url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/anscombesQuartet.csv"},
+   
+    "mark": {
+      "type":"point",
+      "color":"rgba(128,0,0,.8)",
+      "size":100},
+  
+    "height":300,
+    "width":300,
+   
+    "encoding": {
+      "x": {
+        "field": "policyX", 
+        "type": "quantitative",
+        "title":"income deprivation, %"
+          },
+  
+      "y": {
+        "field": "impactY", 
+        "type": "quantitative",
+          "title": "Impact"},
+
+    "facet": {
+      "field": "Dataset", 
+      "type": "nominal",
+      "title":null,
+      "columns":2
+      }
+ }
+}

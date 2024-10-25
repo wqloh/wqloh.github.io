@@ -106,22 +106,25 @@
     <h2>Challenge 3: Debating</h2>
 
     <section>
+        <p> 
+            Sustainable economic growth: Renewable energy sources provide an avenue for governments to protect the Earth without overly compromising economic growth.
+        </p>
         <div class="chart-description">
-            <h3>Graph 1: Test</h3>
+            <h3>Graph 1: Primary Energy Consumption by Region</h3>
             <p> 
-                Test
+                Energy demand has grown worldwide in the past six decades. Since it may be difficult to reduce consumption, transitioning to renewable energy may be more viable, especially for Asia Pacific.
         </div>
-        <figure id="nuclear_japan"></figure>
+        <figure id="pri_energy_consump"></figure>
     </section>
 
     <section>
         <div class="chart-description">
-            <h3>Graph 2: Test</h3>
+            <h3>Graph 2: Global Renewable Energy Share of Total Energy Consumption</h3>
             <p> 
-                Test
+                Despite growing awareness and adoption of renewable energy sources, the share of renewable energy in total energy consumption worldwide has largely stagnated at around 25-30% in the past two decades. 
             </p>
         </div>
-        <figure id="renewables_china"></figure> 
+        <figure id="renewables_worldwide"></figure> 
     </section>
 
 
@@ -130,13 +133,17 @@
         let fig_1 = "wk1_olympics_rep.json" // We're storing the URL of the graph we want to display in a variable
         let fig_2 = "wk1_vat.json" 
         let fig_3 = "wk2_nuclear_japan.json" 
-        let fig_4 = "wk2_renewables_china.json"
+        let fig_4 = "wk2_renewables_china.json" 
+        let fig_5 = "wk3_pri_energy_consump.json"
+        let fig_6 = "wk3_renewables_worldwide.json"
 
 // Embed graphs in the divs above
         vegaEmbed('#olympics_rep', fig_1) // We're using the vegaEmbed function to put a graph in the element with id fig_1
         vegaEmbed('#vat', fig_2)
         vegaEmbed('#nuclear_japan', fig_3)
         vegaEmbed('#renewables_china', fig_4)
+        vegaEmbed('#pri_energy_consump', fig_5)
+        vegaEmbed('#renewables_worldwide', fig_6)
     </script>
 </body>
     

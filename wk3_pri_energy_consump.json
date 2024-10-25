@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "title": {
+        "text": "Primary Energy Consumption (Exajoules)",
+        "subtitle": ["Source: The Energy Institute",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+  
+    "width":500,
+    "height":500,
+  
+    "mark":{
+        "type": "line",
+        "smooth":false,
+        "strokeWidth":2,
+        "opacity":1},
+  
+  
+    "data": {
+       "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/wk3_pri_energy_consump_region.csv"},
+  
+  
+   "encoding": {
+      
+      "x": {
+          "field": "Year",
+          "type": "temporal",
+          "title":null},
+      
+      "y": {
+          "field": "Primary Energy Consumption (Exajoules)",
+          "type": "quantitative",
+          "title":null
+      },
+      
+      "color":{
+        "field":"Country",
+        "title":null,
+        "type": "nominal",
+        "legend": {
+            "orient": "top-left"
+        }
+      }
+    }
+  }

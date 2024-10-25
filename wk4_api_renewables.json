@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Renewable Energy Generation in Australia (BKWH)",
+  "title": {"text": "Renewable Energy Generation in Australia (BKWH)"},
+  "data": {
+    "url": "https://api.eia.gov/v2/international/data/?frequency=annual&data[0]=value&facets[activityId][]=12&facets[countryRegionId][]=AUS&facets[productId][]=29&facets[unit][]=BKWH&sort[0][column]=period&sort[0][direction]=desc&offset=0&length=5000&api_key=WqqCglm8p5FxuzoJ8hbnzdQ06E99tVKPzrgSB2KY",
+    "format":{
+  "type":"json",
+  "property":"response.data"
+}
+  },
+  "mark": {
+    "type":"bar",
+  "color": "darkgreen"},
+
+  "encoding": {
+    "x": {"field": "period", "type": "temporal"
+    },
+    "y": {"field": "value", "type": "quantitative"}
+  }
+}

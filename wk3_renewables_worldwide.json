@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/wk3_renewables_worldwide.csv"
+           },
+
+    "title": {
+        "text": "Renewable energy share in the total final energy consumption",
+        "subtitle": "Worldwide (%)",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+    "width":300,
+    "height":300,
+
+    "mark":{
+        "type": "line",
+        "color":"red",
+        "strokeWidth":2,
+        "opacity":1},
+ 
+    "encoding": {
+      "x": {
+          "field": "Year",
+          "type": "temporal",
+          "title":null},
+      "y": {
+          "field": "Renewable energy share in the total final energy consumption (%)",
+          "type": "quantitative",
+          "title":null,
+          "scale": {"domain": [0, 100]}}
+    }
+}

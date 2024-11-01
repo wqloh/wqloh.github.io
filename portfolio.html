@@ -127,6 +127,35 @@
         <figure id="renewables_worldwide"></figure> 
     </section>
 
+    <h2>Challenge 4: Replication</h2>
+
+    <section>     
+        <h3>Image 1: A graph from a The Economist article</h3>   
+        <p> 
+            Screenshot of a graph from a The Economist article <a href="https://www.economist.com/britain/2016/08/13/the-metamorphosis">The metamorphosis: How Jeremy Corbyn took control of Labour</a>.
+        </p>
+        <img src="wk4_economist_original.png"> 
+    </section>
+
+    <section>     
+        <div class="chart-description">
+            <h3>Graph 1: A recreation of the above graph</h3>           
+            <p> 
+                As close to the original as I could.
+        </p>       
+        </div>
+        <figure id="economist_original"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: An attempt to improve the above graph</h3>
+            <p> 
+                Extended the X axis to just greater than 5210. Made the title more insightful. Corrected the sequential single-hue scheme of the bars. Removed the redundant "Source: Facebook".
+        </p>       
+        </div>
+        <figure id="economist_new"></figure>
+    </section>    
 
     <script>
  // Define graphs that we want as variables linked to JSON files       
@@ -135,7 +164,9 @@
         let fig_3 = "wk2_nuclear_japan.json" 
         let fig_4 = "wk2_renewables_china.json" 
         let fig_5 = "wk3_pri_energy_consump.json"
-        let fig_6 = "wk3_renewables_worldwide.json"
+        let fig_6 = "wk3_renewables_worldwide.json" 
+        let fig_7 = "wk4_economist_original.json"
+        let fig_8 = "wk4_economist_new.json"
 
 // Embed graphs in the divs above
         vegaEmbed('#olympics_rep', fig_1) // We're using the vegaEmbed function to put a graph in the element with id fig_1
@@ -144,6 +175,8 @@
         vegaEmbed('#renewables_china', fig_4)
         vegaEmbed('#pri_energy_consump', fig_5)
         vegaEmbed('#renewables_worldwide', fig_6)
+        vegaEmbed('#economist_original', fig_7)
+        vegaEmbed('#economist_new', fig_8)
     </script>
 </body>
     

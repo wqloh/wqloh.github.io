@@ -1,0 +1,68 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#cddfe6",
+    "title": {
+      "text": "Labour's Facebook engagement",
+        "fontSize": 25,
+      "subtitle": [
+        "Average number of likes per Facebook post",
+        "2016",
+        ""
+      ],
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/wk4_economist_new.csv"
+    },
+    "layer": [
+      {"mark": {"type": "bar", "strokeWidth": 10, "opacity": 1}},
+      {
+        "transform": [{"filter": "datum.Account == 'Jeremy Corbyn'"}],
+        "mark": {"type": "text", "align": "right", "dx": -5},
+        "encoding": {
+          "text": {"field": "Number of likes"},
+          "color": {"value": "white"}
+        }
+      }
+    ],
+    "height": 300,
+    "width": 350,
+    "encoding": {
+      "y": {"field": "Account", "type": "nominal", "sort": [], "title": null},
+      "x": {
+        "field": "Number of likes",
+        "type": "quantitative",
+        "title": null,
+        "scale": {"domain": [0, 5500]},
+        "axis": {"values": {
+            "expr": "[0,1000,2000,3000,4000,5000]"
+          }, "grid": true, "zindex": 0, "gridColor": "white", "orient": "top"}
+      },
+      "color": {
+        "field": "Account",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "Jeremy Corbyn",
+            "Labour Party",
+            "Momentum",
+            "Owen Smith",
+            "Andy Burnham",
+            "Saving Labour"
+          ],
+          "range": [
+            "#c1171a",
+            "#e13128",
+            "#f6573f",
+            "#fb7f60",
+            "#fb7f60",
+            "#fda589"
+          ]
+        },
+        "legend": null
+      }
+    }
+  }
+  

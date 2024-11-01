@@ -92,6 +92,38 @@
         </div>
         <figure id="colab"></figure>
     </section>
+   
+    <h2>Week 4</h2>
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: Renewable Energy Generation in Australia</h3>
+            <p> 
+                Using an API to retrieve data from U.S. Energy Information Administration
+            </p>
+        </div>
+        <figure id="api_renewables"></figure>
+    </section>
+
+    <h2>Week 5</h2>
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: Economic Growth & CO2 Emissions</h3>
+            <p> 
+                Test
+            </p>
+        </div>
+        <figure id="wbapi"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: Economic Growth & CO2 Emissions (Interactive)</h3>
+            <p> 
+                Test
+            </p>
+        </div>
+        <figure id="wbapi_interactive"></figure>
+    </section>
 
     <script>
     let fig_1 = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"
@@ -100,11 +132,17 @@
     let fig_4 = "wk3_anscombe.json"
     let fig_5 = "wk3_goods_services_colab.json" 
     let fig_6 = "wk4_api_renewables.json"
+    let fig_7 = "wk5_wbapi.json" 
+    let fig_8 = "wk5_wbapi_interactive.json"
     vegaEmbed('#gdp_lifeexpec', fig_1)
     vegaEmbed('#declining_pop', fig_2)
     vegaEmbed('#vices_spending', fig_3)
     vegaEmbed('#anscombe', fig_4)
     vegaEmbed('#colab', fig_5)
+    vegaEmbed('#api_renewables', fig_6)
+    vegaEmbed('#wbapi', fig_7)
+    vegaEmbed('#wbapi_interactive', fig_8)
+
     </script>
 
 </body>  

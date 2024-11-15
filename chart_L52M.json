@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/data_ONS_MM23_L52M.json",
+        "format": {
+            "property": "years"
+        }
+    },
+    "mark": {
+        "type": "line",
+        "color": "Brown"
+    },
+    "encoding": {
+        "x": {
+            "field": "year",
+            "type": "temporal",
+            "axis": {
+                "title": "Year",
+                "titleFontSize": 9
+            }
+        },
+        "y": {
+            "field": "value",
+            "type": "quantitative",
+            "axis": {
+                "title": "Index, base year= 100",
+                "titleFontSize": 9
+            }
+        }
+    },
+    "title": {
+        "text": "Consumer Price Inflation Index: Oils & Fats",
+        "align": "left",
+        "subtitleFontSize": 1,
+        "subtitle": " ",
+        "anchor": "start"
+    },
+    "width": 100,
+    "height": 100
+}

@@ -1,205 +1,1177 @@
-year,id,price
-1988,UKI,0.47
-1988,UKJ,0.46000001
-1988,UKK,0.44
-1988,UKH,0.49000001
-1988,UKF,0.47999999
-1988,UKG,0.44
-1988,UKE,0.44
-1988,UKD,0.44999999
-1988,UKC,0.44999999
-1988,UKL,0.44
-1988,UKM,0.43000001
-1988,UKN,0.56
-1989,UKI,0.47
-1989,UKJ,0.49000001
-1989,UKK,0.47
-1989,UKH,0.51999998
-1989,UKF,0.47999999
-1989,UKG,0.46000001
-1989,UKE,0.50999999
-1989,UKD,0.46000001
-1989,UKC,0.44999999
-1989,UKL,0.47
-1989,UKM,0.46000001
-1989,UKN,0.58999997
-1990,UKI,0.49000001
-1990,UKJ,0.47
-1990,UKK,0.50999999
-1990,UKH,0.54000002
-1990,UKF,0.51999998
-1990,UKG,0.47
-1990,UKE,0.54000002
-1990,UKD,0.52999997
-1990,UKC,0.47
-1990,UKL,0.50999999
-1990,UKM,0.49000001
-1990,UKN,0.54000002
-1991,UKI,0.54000002
-1991,UKJ,0.50999999
-1991,UKK,0.54000002
-1991,UKH,0.51999998
-1991,UKF,0.52999997
-1991,UKG,0.52999997
-1991,UKE,0.54000002
-1991,UKD,0.56
-1991,UKC,0.47999999
-1991,UKL,0.54000002
-1991,UKM,0.54000002
-1991,UKN,0.58999997
-1992,UKI,0.58999997
-1992,UKJ,0.58999997
-1992,UKK,0.57999998
-1992,UKH,0.49000001
-1992,UKF,0.49000001
-1992,UKG,0.57999998
-1992,UKE,0.54000002
-1992,UKD,0.61000001
-1992,UKC,0.55000001
-1992,UKL,0.57999998
-1992,UKM,0.49000001
-1992,UKN,0.66000003
-1993,UKI,0.66000003
-1993,UKJ,0.69
-1993,UKK,0.60000002
-1993,UKH,0.50999999
-1993,UKF,0.55000001
-1993,UKG,0.60000002
-1993,UKE,0.60000002
-1993,UKD,0.62
-1993,UKC,0.56
-1993,UKL,0.54000002
-1993,UKM,0.55000001
-1993,UKN,0.70999998
-1994,UKI,0.58999997
-1994,UKJ,0.61000001
-1994,UKK,0.60000002
-1994,UKH,0.38999999
-1994,UKF,0.47
-1994,UKG,0.60000002
-1994,UKE,0.57999998
-1994,UKD,0.60000002
-1994,UKC,0.54000002
-1994,UKL,0.54000002
-1994,UKM,0.50999999
-1994,UKN,0.58999997
-1995,UKI,0.61000001
-1995,UKJ,0.62
-1995,UKK,0.63
-1995,UKH,0.38999999
-1995,UKF,0.47999999
-1995,UKG,0.58999997
-1995,UKE,0.62
-1995,UKD,0.61000001
-1995,UKC,0.60000002
-1995,UKL,0.49000001
-1995,UKM,0.44999999
-1995,UKN,0.69999999
-1996,UKI,0.634999995
-1996,UKJ,0.56999999
-1996,UKK,0.63
-1996,UKH,0.41999999
-1996,UKF,0.49000001
-1996,UKG,0.58999997
-1996,UKE,0.69
-1996,UKD,0.61000001
-1996,UKC,0.63
-1996,UKL,0.41999999
-1996,UKM,0.44999999
-1996,UKN,0.69999999
-1997,UKI,0.63
-1997,UKJ,0.55000001
-1997,UKK,0.49000001
-1997,UKH,0.41999999
-1997,UKF,0.47
-1997,UKG,0.55000001
-1997,UKE,0.67000002
-1997,UKD,0.58999997
-1997,UKC,0.41999999
-1997,UKL,0.43499999
-1997,UKM,0.49000001
-1997,UKN,0.49000001
-1998,UKI,0.675000015
-1998,UKJ,0.57999998
-1998,UKK,0.44999999
-1998,UKH,0.38
-1998,UKF,0.41999999
-1998,UKG,0.56999999
-1998,UKE,0.64999998
-1998,UKD,0.55000001
-1998,UKC,0.41999999
-1998,UKL,0.38999999
-1998,UKM,0.55000001
-1998,UKN,0.46000001
-1999,UKI,0.63
-1999,UKJ,0.62
-1999,UKK,0.44999999
-1999,UKH,0.34999999
-1999,UKF,0.44999999
-1999,UKG,0.63
-1999,UKE,0.64999998
-1999,UKD,0.56
-1999,UKC,0.38999999
-1999,UKL,0.38999999
-1999,UKM,0.58999997
-1999,UKN,0.49000001
-2000,UKI,0.64999998
-2000,UKJ,0.63
-2000,UKK,0.49000001
-2000,UKH,0.38999999
-2000,UKF,0.44999999
-2000,UKG,0.58999997
-2000,UKE,0.64999998
-2000,UKD,0.56
-2000,UKC,0.44999999
-2000,UKL,0.38999999
-2000,UKM,0.55000001
-2000,UKN,0.55000001
-2001,UKI,0.58999997
-2001,UKJ,0.58999997
-2001,UKK,0.55000001
-2001,UKH,0.44999999
-2001,UKF,0.49000001
-2001,UKG,0.58999997
-2001,UKE,0.705000015
-2001,UKD,0.58999997
-2001,UKC,0.38999999
-2001,UKL,0.38999999
-2001,UKM,0.58999997
-2001,UKN,0.58999997
-2002,UKI,0.64999998
-2002,UKJ,0.64999998
-2002,UKK,0.58999997
-2002,UKH,0.58999997
-2002,UKF,0.58999997
-2002,UKG,0.58999997
-2002,UKE,0.75
-2002,UKD,0.58999997
-2002,UKC,0.58999997
-2002,UKL,0.38999999
-2002,UKM,0.58999997
-2002,UKN,0.58999997
-2003,UKI,0.644999985
-2003,UKJ,0.63999999
-2003,UKK,0.63
-2003,UKH,0.62
-2003,UKF,0.63
-2003,UKG,0.63999999
-2003,UKE,0.63999999
-2003,UKD,0.63
-2003,UKC,0.58999997
-2003,UKL,0.44999999
-2003,UKM,0.63
-2003,UKN,0.63
-2004,UKI,0.68000001
-2004,UKJ,0.68000001
-2004,UKK,0.68000001
-2004,UKH,0.63999999
-2004,UKF,0.6649999950000001
-2004,UKG,0.68000001
-2004,UKE,0.68000001
-2004,UKD,0.64999998
-2004,UKC,0.64999998
-2004,UKL,0.44999999
-2004,UKM,0.6649999950000001
-2004,UKN,0.6649999950000001
+year,item,region_name
+1988.0,Sliced White Bread,London
+1988.0,Pork Sausages,London
+1988.0,Cheddar,London
+1988.0,Sliced White Bread,South East
+1988.0,Pork Sausages,South East
+1988.0,Cheddar,South East
+1988.0,Sliced White Bread,South West
+1988.0,Pork Sausages,South West
+1988.0,Cheddar,South West
+1988.0,Sliced White Bread,East Anglia
+1988.0,Pork Sausages,East Anglia
+1988.0,Cheddar,East Anglia
+1988.0,Sliced White Bread,East Midlands
+1988.0,Pork Sausages,East Midlands
+1988.0,Cheddar,East Midlands
+1988.0,Sliced White Bread,West Midlands
+1988.0,Pork Sausages,West Midlands
+1988.0,Cheddar,West Midlands
+1988.0,Sliced White Bread,Yorkshire & Humber
+1988.0,Pork Sausages,Yorkshire & Humber
+1988.0,Cheddar,Yorkshire & Humber
+1988.0,Sliced White Bread,North West
+1988.0,Pork Sausages,North West
+1988.0,Cheddar,North West
+1988.0,Sliced White Bread,North
+1988.0,Pork Sausages,North
+1988.0,Cheddar,North
+1988.0,Sliced White Bread,Wales
+1988.0,Pork Sausages,Wales
+1988.0,Cheddar,Wales
+1988.0,Sliced White Bread,Scotland
+1988.0,Pork Sausages,Scotland
+1988.0,Cheddar,Scotland
+1988.0,Sliced White Bread,Northern Ireland
+1988.0,Pork Sausages,Northern Ireland
+1988.0,Cheddar,Northern Ireland
+1989.0,Sliced White Bread,London
+1989.0,Pork Sausages,London
+1989.0,Cheddar,London
+1989.0,Sliced White Bread,South East
+1989.0,Pork Sausages,South East
+1989.0,Cheddar,South East
+1989.0,Sliced White Bread,South West
+1989.0,Pork Sausages,South West
+1989.0,Cheddar,South West
+1989.0,Sliced White Bread,East Anglia
+1989.0,Pork Sausages,East Anglia
+1989.0,Cheddar,East Anglia
+1989.0,Sliced White Bread,East Midlands
+1989.0,Pork Sausages,East Midlands
+1989.0,Cheddar,East Midlands
+1989.0,Sliced White Bread,West Midlands
+1989.0,Pork Sausages,West Midlands
+1989.0,Cheddar,West Midlands
+1989.0,Sliced White Bread,Yorkshire & Humber
+1989.0,Pork Sausages,Yorkshire & Humber
+1989.0,Cheddar,Yorkshire & Humber
+1989.0,Sliced White Bread,North West
+1989.0,Pork Sausages,North West
+1989.0,Cheddar,North West
+1989.0,Sliced White Bread,North
+1989.0,Pork Sausages,North
+1989.0,Cheddar,North
+1989.0,Sliced White Bread,Wales
+1989.0,Pork Sausages,Wales
+1989.0,Cheddar,Wales
+1989.0,Sliced White Bread,Scotland
+1989.0,Pork Sausages,Scotland
+1989.0,Cheddar,Scotland
+1989.0,Sliced White Bread,Northern Ireland
+1989.0,Pork Sausages,Northern Ireland
+1989.0,Cheddar,Northern Ireland
+1990.0,Sliced White Bread,London
+1990.0,Pork Sausages,London
+1990.0,Cheddar,London
+1990.0,Sliced White Bread,South East
+1990.0,Pork Sausages,South East
+1990.0,Cheddar,South East
+1990.0,Sliced White Bread,South West
+1990.0,Pork Sausages,South West
+1990.0,Cheddar,South West
+1990.0,Sliced White Bread,East Anglia
+1990.0,Pork Sausages,East Anglia
+1990.0,Cheddar,East Anglia
+1990.0,Sliced White Bread,East Midlands
+1990.0,Pork Sausages,East Midlands
+1990.0,Cheddar,East Midlands
+1990.0,Sliced White Bread,West Midlands
+1990.0,Pork Sausages,West Midlands
+1990.0,Cheddar,West Midlands
+1990.0,Sliced White Bread,Yorkshire & Humber
+1990.0,Pork Sausages,Yorkshire & Humber
+1990.0,Cheddar,Yorkshire & Humber
+1990.0,Sliced White Bread,North West
+1990.0,Pork Sausages,North West
+1990.0,Cheddar,North West
+1990.0,Sliced White Bread,North
+1990.0,Pork Sausages,North
+1990.0,Cheddar,North
+1990.0,Sliced White Bread,Wales
+1990.0,Pork Sausages,Wales
+1990.0,Cheddar,Wales
+1990.0,Sliced White Bread,Scotland
+1990.0,Pork Sausages,Scotland
+1990.0,Cheddar,Scotland
+1990.0,Sliced White Bread,Northern Ireland
+1990.0,Pork Sausages,Northern Ireland
+1990.0,Cheddar,Northern Ireland
+1991.0,Sliced White Bread,London
+1991.0,Pork Sausages,London
+1991.0,Cheddar,London
+1991.0,Sliced White Bread,South East
+1991.0,Pork Sausages,South East
+1991.0,Cheddar,South East
+1991.0,Sliced White Bread,South West
+1991.0,Pork Sausages,South West
+1991.0,Cheddar,South West
+1991.0,Sliced White Bread,East Anglia
+1991.0,Pork Sausages,East Anglia
+1991.0,Cheddar,East Anglia
+1991.0,Sliced White Bread,East Midlands
+1991.0,Pork Sausages,East Midlands
+1991.0,Cheddar,East Midlands
+1991.0,Sliced White Bread,West Midlands
+1991.0,Pork Sausages,West Midlands
+1991.0,Cheddar,West Midlands
+1991.0,Sliced White Bread,Yorkshire & Humber
+1991.0,Pork Sausages,Yorkshire & Humber
+1991.0,Cheddar,Yorkshire & Humber
+1991.0,Sliced White Bread,North West
+1991.0,Pork Sausages,North West
+1991.0,Cheddar,North West
+1991.0,Sliced White Bread,North
+1991.0,Pork Sausages,North
+1991.0,Cheddar,North
+1991.0,Sliced White Bread,Wales
+1991.0,Pork Sausages,Wales
+1991.0,Cheddar,Wales
+1991.0,Sliced White Bread,Scotland
+1991.0,Pork Sausages,Scotland
+1991.0,Cheddar,Scotland
+1991.0,Sliced White Bread,Northern Ireland
+1991.0,Pork Sausages,Northern Ireland
+1991.0,Cheddar,Northern Ireland
+1992.0,Sliced White Bread,London
+1992.0,Pork Sausages,London
+1992.0,Cheddar,London
+1992.0,Sliced White Bread,South East
+1992.0,Pork Sausages,South East
+1992.0,Cheddar,South East
+1992.0,Sliced White Bread,South West
+1992.0,Pork Sausages,South West
+1992.0,Cheddar,South West
+1992.0,Sliced White Bread,East Anglia
+1992.0,Pork Sausages,East Anglia
+1992.0,Cheddar,East Anglia
+1992.0,Sliced White Bread,East Midlands
+1992.0,Pork Sausages,East Midlands
+1992.0,Cheddar,East Midlands
+1992.0,Sliced White Bread,West Midlands
+1992.0,Pork Sausages,West Midlands
+1992.0,Cheddar,West Midlands
+1992.0,Sliced White Bread,Yorkshire & Humber
+1992.0,Pork Sausages,Yorkshire & Humber
+1992.0,Cheddar,Yorkshire & Humber
+1992.0,Sliced White Bread,North West
+1992.0,Pork Sausages,North West
+1992.0,Cheddar,North West
+1992.0,Sliced White Bread,North
+1992.0,Pork Sausages,North
+1992.0,Cheddar,North
+1992.0,Sliced White Bread,Wales
+1992.0,Pork Sausages,Wales
+1992.0,Cheddar,Wales
+1992.0,Sliced White Bread,Scotland
+1992.0,Pork Sausages,Scotland
+1992.0,Cheddar,Scotland
+1992.0,Sliced White Bread,Northern Ireland
+1992.0,Pork Sausages,Northern Ireland
+1992.0,Cheddar,Northern Ireland
+1993.0,Sliced White Bread,London
+1993.0,Pork Sausages,London
+1993.0,Cheddar,London
+1993.0,Sliced White Bread,South East
+1993.0,Pork Sausages,South East
+1993.0,Cheddar,South East
+1993.0,Sliced White Bread,South West
+1993.0,Pork Sausages,South West
+1993.0,Cheddar,South West
+1993.0,Sliced White Bread,East Anglia
+1993.0,Pork Sausages,East Anglia
+1993.0,Cheddar,East Anglia
+1993.0,Sliced White Bread,East Midlands
+1993.0,Pork Sausages,East Midlands
+1993.0,Cheddar,East Midlands
+1993.0,Sliced White Bread,West Midlands
+1993.0,Pork Sausages,West Midlands
+1993.0,Cheddar,West Midlands
+1993.0,Sliced White Bread,Yorkshire & Humber
+1993.0,Pork Sausages,Yorkshire & Humber
+1993.0,Cheddar,Yorkshire & Humber
+1993.0,Sliced White Bread,North West
+1993.0,Pork Sausages,North West
+1993.0,Cheddar,North West
+1993.0,Sliced White Bread,North
+1993.0,Pork Sausages,North
+1993.0,Cheddar,North
+1993.0,Sliced White Bread,Wales
+1993.0,Pork Sausages,Wales
+1993.0,Cheddar,Wales
+1993.0,Sliced White Bread,Scotland
+1993.0,Pork Sausages,Scotland
+1993.0,Cheddar,Scotland
+1993.0,Sliced White Bread,Northern Ireland
+1993.0,Pork Sausages,Northern Ireland
+1993.0,Cheddar,Northern Ireland
+1994.0,Sliced White Bread,London
+1994.0,Pork Sausages,London
+1994.0,Cheddar,London
+1994.0,Sliced White Bread,South East
+1994.0,Pork Sausages,South East
+1994.0,Cheddar,South East
+1994.0,Sliced White Bread,South West
+1994.0,Pork Sausages,South West
+1994.0,Cheddar,South West
+1994.0,Sliced White Bread,East Anglia
+1994.0,Pork Sausages,East Anglia
+1994.0,Cheddar,East Anglia
+1994.0,Sliced White Bread,East Midlands
+1994.0,Pork Sausages,East Midlands
+1994.0,Cheddar,East Midlands
+1994.0,Sliced White Bread,West Midlands
+1994.0,Pork Sausages,West Midlands
+1994.0,Cheddar,West Midlands
+1994.0,Sliced White Bread,Yorkshire & Humber
+1994.0,Pork Sausages,Yorkshire & Humber
+1994.0,Cheddar,Yorkshire & Humber
+1994.0,Sliced White Bread,North West
+1994.0,Pork Sausages,North West
+1994.0,Cheddar,North West
+1994.0,Sliced White Bread,North
+1994.0,Pork Sausages,North
+1994.0,Cheddar,North
+1994.0,Sliced White Bread,Wales
+1994.0,Pork Sausages,Wales
+1994.0,Cheddar,Wales
+1994.0,Sliced White Bread,Scotland
+1994.0,Pork Sausages,Scotland
+1994.0,Cheddar,Scotland
+1994.0,Sliced White Bread,Northern Ireland
+1994.0,Pork Sausages,Northern Ireland
+1994.0,Cheddar,Northern Ireland
+1995.0,Sliced White Bread,London
+1995.0,Pork Sausages,London
+1995.0,Cheddar,London
+1995.0,Sliced White Bread,South East
+1995.0,Pork Sausages,South East
+1995.0,Cheddar,South East
+1995.0,Sliced White Bread,South West
+1995.0,Pork Sausages,South West
+1995.0,Cheddar,South West
+1995.0,Sliced White Bread,East Anglia
+1995.0,Pork Sausages,East Anglia
+1995.0,Cheddar,East Anglia
+1995.0,Sliced White Bread,East Midlands
+1995.0,Pork Sausages,East Midlands
+1995.0,Cheddar,East Midlands
+1995.0,Sliced White Bread,West Midlands
+1995.0,Pork Sausages,West Midlands
+1995.0,Cheddar,West Midlands
+1995.0,Sliced White Bread,Yorkshire & Humber
+1995.0,Pork Sausages,Yorkshire & Humber
+1995.0,Cheddar,Yorkshire & Humber
+1995.0,Sliced White Bread,North West
+1995.0,Pork Sausages,North West
+1995.0,Cheddar,North West
+1995.0,Sliced White Bread,North
+1995.0,Pork Sausages,North
+1995.0,Cheddar,North
+1995.0,Sliced White Bread,Wales
+1995.0,Pork Sausages,Wales
+1995.0,Cheddar,Wales
+1995.0,Sliced White Bread,Scotland
+1995.0,Pork Sausages,Scotland
+1995.0,Cheddar,Scotland
+1995.0,Sliced White Bread,Northern Ireland
+1995.0,Pork Sausages,Northern Ireland
+1995.0,Cheddar,Northern Ireland
+1996.0,Sliced White Bread,London
+1996.0,Pork Sausages,London
+1996.0,Cheddar,London
+1996.0,Potatoes,London
+1996.0,Sliced White Bread,South East
+1996.0,Pork Sausages,South East
+1996.0,Cheddar,South East
+1996.0,Potatoes,South East
+1996.0,Sliced White Bread,South West
+1996.0,Pork Sausages,South West
+1996.0,Cheddar,South West
+1996.0,Potatoes,South West
+1996.0,Sliced White Bread,East Anglia
+1996.0,Pork Sausages,East Anglia
+1996.0,Cheddar,East Anglia
+1996.0,Potatoes,East Anglia
+1996.0,Sliced White Bread,East Midlands
+1996.0,Pork Sausages,East Midlands
+1996.0,Cheddar,East Midlands
+1996.0,Potatoes,East Midlands
+1996.0,Sliced White Bread,West Midlands
+1996.0,Pork Sausages,West Midlands
+1996.0,Cheddar,West Midlands
+1996.0,Potatoes,West Midlands
+1996.0,Sliced White Bread,Yorkshire & Humber
+1996.0,Pork Sausages,Yorkshire & Humber
+1996.0,Cheddar,Yorkshire & Humber
+1996.0,Potatoes,Yorkshire & Humber
+1996.0,Sliced White Bread,North West
+1996.0,Pork Sausages,North West
+1996.0,Cheddar,North West
+1996.0,Potatoes,North West
+1996.0,Sliced White Bread,North
+1996.0,Pork Sausages,North
+1996.0,Cheddar,North
+1996.0,Potatoes,North
+1996.0,Sliced White Bread,Wales
+1996.0,Pork Sausages,Wales
+1996.0,Cheddar,Wales
+1996.0,Potatoes,Wales
+1996.0,Sliced White Bread,Scotland
+1996.0,Pork Sausages,Scotland
+1996.0,Cheddar,Scotland
+1996.0,Potatoes,Scotland
+1996.0,Sliced White Bread,Northern Ireland
+1996.0,Pork Sausages,Northern Ireland
+1996.0,Cheddar,Northern Ireland
+1996.0,Potatoes,Northern Ireland
+1997.0,Sliced White Bread,London
+1997.0,Pork Sausages,London
+1997.0,Cheddar,London
+1997.0,Potatoes,London
+1997.0,Sliced White Bread,South East
+1997.0,Pork Sausages,South East
+1997.0,Cheddar,South East
+1997.0,Potatoes,South East
+1997.0,Sliced White Bread,South West
+1997.0,Pork Sausages,South West
+1997.0,Cheddar,South West
+1997.0,Potatoes,South West
+1997.0,Sliced White Bread,East Anglia
+1997.0,Pork Sausages,East Anglia
+1997.0,Cheddar,East Anglia
+1997.0,Potatoes,East Anglia
+1997.0,Sliced White Bread,East Midlands
+1997.0,Pork Sausages,East Midlands
+1997.0,Cheddar,East Midlands
+1997.0,Potatoes,East Midlands
+1997.0,Sliced White Bread,West Midlands
+1997.0,Pork Sausages,West Midlands
+1997.0,Cheddar,West Midlands
+1997.0,Potatoes,West Midlands
+1997.0,Sliced White Bread,Yorkshire & Humber
+1997.0,Pork Sausages,Yorkshire & Humber
+1997.0,Cheddar,Yorkshire & Humber
+1997.0,Potatoes,Yorkshire & Humber
+1997.0,Sliced White Bread,North West
+1997.0,Pork Sausages,North West
+1997.0,Cheddar,North West
+1997.0,Potatoes,North West
+1997.0,Sliced White Bread,North
+1997.0,Pork Sausages,North
+1997.0,Cheddar,North
+1997.0,Potatoes,North
+1997.0,Sliced White Bread,Wales
+1997.0,Pork Sausages,Wales
+1997.0,Cheddar,Wales
+1997.0,Potatoes,Wales
+1997.0,Sliced White Bread,Scotland
+1997.0,Pork Sausages,Scotland
+1997.0,Cheddar,Scotland
+1997.0,Potatoes,Scotland
+1997.0,Sliced White Bread,Northern Ireland
+1997.0,Pork Sausages,Northern Ireland
+1997.0,Cheddar,Northern Ireland
+1997.0,Potatoes,Northern Ireland
+1998.0,Sliced White Bread,London
+1998.0,Pork Sausages,London
+1998.0,Cheddar,London
+1998.0,Potatoes,London
+1998.0,Sliced White Bread,South East
+1998.0,Pork Sausages,South East
+1998.0,Cheddar,South East
+1998.0,Potatoes,South East
+1998.0,Sliced White Bread,South West
+1998.0,Pork Sausages,South West
+1998.0,Cheddar,South West
+1998.0,Potatoes,South West
+1998.0,Sliced White Bread,East Anglia
+1998.0,Pork Sausages,East Anglia
+1998.0,Cheddar,East Anglia
+1998.0,Potatoes,East Anglia
+1998.0,Sliced White Bread,East Midlands
+1998.0,Pork Sausages,East Midlands
+1998.0,Cheddar,East Midlands
+1998.0,Potatoes,East Midlands
+1998.0,Sliced White Bread,West Midlands
+1998.0,Pork Sausages,West Midlands
+1998.0,Cheddar,West Midlands
+1998.0,Potatoes,West Midlands
+1998.0,Sliced White Bread,Yorkshire & Humber
+1998.0,Pork Sausages,Yorkshire & Humber
+1998.0,Cheddar,Yorkshire & Humber
+1998.0,Potatoes,Yorkshire & Humber
+1998.0,Sliced White Bread,North West
+1998.0,Pork Sausages,North West
+1998.0,Cheddar,North West
+1998.0,Potatoes,North West
+1998.0,Sliced White Bread,North
+1998.0,Pork Sausages,North
+1998.0,Cheddar,North
+1998.0,Potatoes,North
+1998.0,Sliced White Bread,Wales
+1998.0,Pork Sausages,Wales
+1998.0,Cheddar,Wales
+1998.0,Potatoes,Wales
+1998.0,Sliced White Bread,Scotland
+1998.0,Pork Sausages,Scotland
+1998.0,Cheddar,Scotland
+1998.0,Potatoes,Scotland
+1998.0,Sliced White Bread,Northern Ireland
+1998.0,Pork Sausages,Northern Ireland
+1998.0,Cheddar,Northern Ireland
+1998.0,Potatoes,Northern Ireland
+1999.0,Sliced White Bread,London
+1999.0,Pork Sausages,London
+1999.0,Cheddar,London
+1999.0,Potatoes,London
+1999.0,Sliced White Bread,South East
+1999.0,Pork Sausages,South East
+1999.0,Cheddar,South East
+1999.0,Potatoes,South East
+1999.0,Sliced White Bread,South West
+1999.0,Pork Sausages,South West
+1999.0,Cheddar,South West
+1999.0,Potatoes,South West
+1999.0,Sliced White Bread,East Anglia
+1999.0,Pork Sausages,East Anglia
+1999.0,Cheddar,East Anglia
+1999.0,Potatoes,East Anglia
+1999.0,Sliced White Bread,East Midlands
+1999.0,Pork Sausages,East Midlands
+1999.0,Cheddar,East Midlands
+1999.0,Potatoes,East Midlands
+1999.0,Sliced White Bread,West Midlands
+1999.0,Pork Sausages,West Midlands
+1999.0,Cheddar,West Midlands
+1999.0,Potatoes,West Midlands
+1999.0,Sliced White Bread,Yorkshire & Humber
+1999.0,Pork Sausages,Yorkshire & Humber
+1999.0,Cheddar,Yorkshire & Humber
+1999.0,Potatoes,Yorkshire & Humber
+1999.0,Sliced White Bread,North West
+1999.0,Pork Sausages,North West
+1999.0,Cheddar,North West
+1999.0,Potatoes,North West
+1999.0,Sliced White Bread,North
+1999.0,Pork Sausages,North
+1999.0,Cheddar,North
+1999.0,Potatoes,North
+1999.0,Sliced White Bread,Wales
+1999.0,Pork Sausages,Wales
+1999.0,Cheddar,Wales
+1999.0,Potatoes,Wales
+1999.0,Sliced White Bread,Scotland
+1999.0,Pork Sausages,Scotland
+1999.0,Cheddar,Scotland
+1999.0,Potatoes,Scotland
+1999.0,Sliced White Bread,Northern Ireland
+1999.0,Pork Sausages,Northern Ireland
+1999.0,Cheddar,Northern Ireland
+1999.0,Potatoes,Northern Ireland
+2000.0,Sliced White Bread,London
+2000.0,Pork Sausages,London
+2000.0,Cheddar,London
+2000.0,Potatoes,London
+2000.0,Sliced White Bread,South East
+2000.0,Pork Sausages,South East
+2000.0,Cheddar,South East
+2000.0,Potatoes,South East
+2000.0,Sliced White Bread,South West
+2000.0,Pork Sausages,South West
+2000.0,Cheddar,South West
+2000.0,Potatoes,South West
+2000.0,Sliced White Bread,East Anglia
+2000.0,Pork Sausages,East Anglia
+2000.0,Cheddar,East Anglia
+2000.0,Potatoes,East Anglia
+2000.0,Sliced White Bread,East Midlands
+2000.0,Pork Sausages,East Midlands
+2000.0,Cheddar,East Midlands
+2000.0,Potatoes,East Midlands
+2000.0,Sliced White Bread,West Midlands
+2000.0,Pork Sausages,West Midlands
+2000.0,Cheddar,West Midlands
+2000.0,Potatoes,West Midlands
+2000.0,Sliced White Bread,Yorkshire & Humber
+2000.0,Pork Sausages,Yorkshire & Humber
+2000.0,Cheddar,Yorkshire & Humber
+2000.0,Potatoes,Yorkshire & Humber
+2000.0,Sliced White Bread,North West
+2000.0,Pork Sausages,North West
+2000.0,Cheddar,North West
+2000.0,Potatoes,North West
+2000.0,Sliced White Bread,North
+2000.0,Pork Sausages,North
+2000.0,Cheddar,North
+2000.0,Potatoes,North
+2000.0,Sliced White Bread,Wales
+2000.0,Pork Sausages,Wales
+2000.0,Cheddar,Wales
+2000.0,Potatoes,Wales
+2000.0,Sliced White Bread,Scotland
+2000.0,Pork Sausages,Scotland
+2000.0,Cheddar,Scotland
+2000.0,Potatoes,Scotland
+2000.0,Sliced White Bread,Northern Ireland
+2000.0,Pork Sausages,Northern Ireland
+2000.0,Cheddar,Northern Ireland
+2000.0,Potatoes,Northern Ireland
+2001.0,Sliced White Bread,London
+2001.0,Pork Sausages,London
+2001.0,Cheddar,London
+2001.0,Potatoes,London
+2001.0,Sliced White Bread,South East
+2001.0,Pork Sausages,South East
+2001.0,Cheddar,South East
+2001.0,Potatoes,South East
+2001.0,Sliced White Bread,South West
+2001.0,Pork Sausages,South West
+2001.0,Cheddar,South West
+2001.0,Potatoes,South West
+2001.0,Sliced White Bread,East Anglia
+2001.0,Pork Sausages,East Anglia
+2001.0,Cheddar,East Anglia
+2001.0,Potatoes,East Anglia
+2001.0,Sliced White Bread,East Midlands
+2001.0,Pork Sausages,East Midlands
+2001.0,Cheddar,East Midlands
+2001.0,Potatoes,East Midlands
+2001.0,Sliced White Bread,West Midlands
+2001.0,Pork Sausages,West Midlands
+2001.0,Cheddar,West Midlands
+2001.0,Potatoes,West Midlands
+2001.0,Sliced White Bread,Yorkshire & Humber
+2001.0,Pork Sausages,Yorkshire & Humber
+2001.0,Cheddar,Yorkshire & Humber
+2001.0,Potatoes,Yorkshire & Humber
+2001.0,Sliced White Bread,North West
+2001.0,Pork Sausages,North West
+2001.0,Cheddar,North West
+2001.0,Potatoes,North West
+2001.0,Sliced White Bread,North
+2001.0,Pork Sausages,North
+2001.0,Cheddar,North
+2001.0,Potatoes,North
+2001.0,Sliced White Bread,Wales
+2001.0,Pork Sausages,Wales
+2001.0,Cheddar,Wales
+2001.0,Potatoes,Wales
+2001.0,Sliced White Bread,Scotland
+2001.0,Pork Sausages,Scotland
+2001.0,Cheddar,Scotland
+2001.0,Potatoes,Scotland
+2001.0,Sliced White Bread,Northern Ireland
+2001.0,Pork Sausages,Northern Ireland
+2001.0,Cheddar,Northern Ireland
+2001.0,Potatoes,Northern Ireland
+2002.0,Sliced White Bread,London
+2002.0,Pork Sausages,London
+2002.0,Cheddar,London
+2002.0,Potatoes,London
+2002.0,Sliced White Bread,South East
+2002.0,Pork Sausages,South East
+2002.0,Cheddar,South East
+2002.0,Potatoes,South East
+2002.0,Sliced White Bread,South West
+2002.0,Pork Sausages,South West
+2002.0,Cheddar,South West
+2002.0,Potatoes,South West
+2002.0,Sliced White Bread,East Anglia
+2002.0,Pork Sausages,East Anglia
+2002.0,Cheddar,East Anglia
+2002.0,Potatoes,East Anglia
+2002.0,Sliced White Bread,East Midlands
+2002.0,Pork Sausages,East Midlands
+2002.0,Cheddar,East Midlands
+2002.0,Potatoes,East Midlands
+2002.0,Sliced White Bread,West Midlands
+2002.0,Pork Sausages,West Midlands
+2002.0,Cheddar,West Midlands
+2002.0,Potatoes,West Midlands
+2002.0,Sliced White Bread,Yorkshire & Humber
+2002.0,Pork Sausages,Yorkshire & Humber
+2002.0,Cheddar,Yorkshire & Humber
+2002.0,Potatoes,Yorkshire & Humber
+2002.0,Sliced White Bread,North West
+2002.0,Pork Sausages,North West
+2002.0,Cheddar,North West
+2002.0,Potatoes,North West
+2002.0,Sliced White Bread,North
+2002.0,Pork Sausages,North
+2002.0,Cheddar,North
+2002.0,Potatoes,North
+2002.0,Sliced White Bread,Wales
+2002.0,Pork Sausages,Wales
+2002.0,Cheddar,Wales
+2002.0,Potatoes,Wales
+2002.0,Sliced White Bread,Scotland
+2002.0,Pork Sausages,Scotland
+2002.0,Cheddar,Scotland
+2002.0,Potatoes,Scotland
+2002.0,Sliced White Bread,Northern Ireland
+2002.0,Pork Sausages,Northern Ireland
+2002.0,Cheddar,Northern Ireland
+2002.0,Potatoes,Northern Ireland
+2003.0,Sliced White Bread,London
+2003.0,Pork Sausages,London
+2003.0,Cheddar,London
+2003.0,Potatoes,London
+2003.0,Sliced White Bread,South East
+2003.0,Pork Sausages,South East
+2003.0,Cheddar,South East
+2003.0,Potatoes,South East
+2003.0,Sliced White Bread,South West
+2003.0,Pork Sausages,South West
+2003.0,Cheddar,South West
+2003.0,Potatoes,South West
+2003.0,Sliced White Bread,East Anglia
+2003.0,Pork Sausages,East Anglia
+2003.0,Cheddar,East Anglia
+2003.0,Potatoes,East Anglia
+2003.0,Sliced White Bread,East Midlands
+2003.0,Pork Sausages,East Midlands
+2003.0,Cheddar,East Midlands
+2003.0,Potatoes,East Midlands
+2003.0,Sliced White Bread,West Midlands
+2003.0,Pork Sausages,West Midlands
+2003.0,Cheddar,West Midlands
+2003.0,Potatoes,West Midlands
+2003.0,Sliced White Bread,Yorkshire & Humber
+2003.0,Pork Sausages,Yorkshire & Humber
+2003.0,Cheddar,Yorkshire & Humber
+2003.0,Potatoes,Yorkshire & Humber
+2003.0,Sliced White Bread,North West
+2003.0,Pork Sausages,North West
+2003.0,Cheddar,North West
+2003.0,Potatoes,North West
+2003.0,Sliced White Bread,North
+2003.0,Pork Sausages,North
+2003.0,Cheddar,North
+2003.0,Potatoes,North
+2003.0,Sliced White Bread,Wales
+2003.0,Pork Sausages,Wales
+2003.0,Cheddar,Wales
+2003.0,Potatoes,Wales
+2003.0,Sliced White Bread,Scotland
+2003.0,Pork Sausages,Scotland
+2003.0,Cheddar,Scotland
+2003.0,Potatoes,Scotland
+2003.0,Sliced White Bread,Northern Ireland
+2003.0,Pork Sausages,Northern Ireland
+2003.0,Cheddar,Northern Ireland
+2003.0,Potatoes,Northern Ireland
+2004.0,Sliced White Bread,London
+2004.0,Pork Sausages,London
+2004.0,Cheddar,London
+2004.0,Potatoes,London
+2004.0,Sliced White Bread,South East
+2004.0,Pork Sausages,South East
+2004.0,Cheddar,South East
+2004.0,Potatoes,South East
+2004.0,Sliced White Bread,South West
+2004.0,Pork Sausages,South West
+2004.0,Cheddar,South West
+2004.0,Potatoes,South West
+2004.0,Sliced White Bread,East Anglia
+2004.0,Pork Sausages,East Anglia
+2004.0,Cheddar,East Anglia
+2004.0,Potatoes,East Anglia
+2004.0,Sliced White Bread,East Midlands
+2004.0,Pork Sausages,East Midlands
+2004.0,Cheddar,East Midlands
+2004.0,Potatoes,East Midlands
+2004.0,Sliced White Bread,West Midlands
+2004.0,Pork Sausages,West Midlands
+2004.0,Cheddar,West Midlands
+2004.0,Potatoes,West Midlands
+2004.0,Sliced White Bread,Yorkshire & Humber
+2004.0,Pork Sausages,Yorkshire & Humber
+2004.0,Cheddar,Yorkshire & Humber
+2004.0,Potatoes,Yorkshire & Humber
+2004.0,Sliced White Bread,North West
+2004.0,Pork Sausages,North West
+2004.0,Cheddar,North West
+2004.0,Potatoes,North West
+2004.0,Sliced White Bread,North
+2004.0,Pork Sausages,North
+2004.0,Cheddar,North
+2004.0,Potatoes,North
+2004.0,Sliced White Bread,Wales
+2004.0,Pork Sausages,Wales
+2004.0,Cheddar,Wales
+2004.0,Potatoes,Wales
+2004.0,Sliced White Bread,Scotland
+2004.0,Pork Sausages,Scotland
+2004.0,Cheddar,Scotland
+2004.0,Potatoes,Scotland
+2004.0,Sliced White Bread,Northern Ireland
+2004.0,Pork Sausages,Northern Ireland
+2004.0,Cheddar,Northern Ireland
+2004.0,Potatoes,Northern Ireland
+2005.0,Pork Sausages,London
+2005.0,Cheddar,London
+2005.0,Pork Sausages,South East
+2005.0,Cheddar,South East
+2005.0,Pork Sausages,South West
+2005.0,Cheddar,South West
+2005.0,Pork Sausages,East Anglia
+2005.0,Cheddar,East Anglia
+2005.0,Pork Sausages,East Midlands
+2005.0,Cheddar,East Midlands
+2005.0,Pork Sausages,West Midlands
+2005.0,Cheddar,West Midlands
+2005.0,Pork Sausages,Yorkshire & Humber
+2005.0,Cheddar,Yorkshire & Humber
+2005.0,Pork Sausages,North West
+2005.0,Cheddar,North West
+2005.0,Pork Sausages,North
+2005.0,Cheddar,North
+2005.0,Pork Sausages,Wales
+2005.0,Cheddar,Wales
+2005.0,Pork Sausages,Scotland
+2005.0,Cheddar,Scotland
+2005.0,Pork Sausages,Northern Ireland
+2005.0,Cheddar,Northern Ireland
+2006.0,Pork Sausages,London
+2006.0,Cheddar,London
+2006.0,Pork Sausages,South East
+2006.0,Cheddar,South East
+2006.0,Pork Sausages,South West
+2006.0,Cheddar,South West
+2006.0,Pork Sausages,East Anglia
+2006.0,Cheddar,East Anglia
+2006.0,Pork Sausages,East Midlands
+2006.0,Cheddar,East Midlands
+2006.0,Pork Sausages,West Midlands
+2006.0,Cheddar,West Midlands
+2006.0,Pork Sausages,Yorkshire & Humber
+2006.0,Cheddar,Yorkshire & Humber
+2006.0,Pork Sausages,North West
+2006.0,Cheddar,North West
+2006.0,Pork Sausages,North
+2006.0,Cheddar,North
+2006.0,Pork Sausages,Wales
+2006.0,Cheddar,Wales
+2006.0,Pork Sausages,Scotland
+2006.0,Cheddar,Scotland
+2006.0,Pork Sausages,Northern Ireland
+2006.0,Cheddar,Northern Ireland
+2007.0,Pork Sausages,London
+2007.0,Cheddar,London
+2007.0,Pork Sausages,South East
+2007.0,Cheddar,South East
+2007.0,Pork Sausages,South West
+2007.0,Cheddar,South West
+2007.0,Pork Sausages,East Anglia
+2007.0,Cheddar,East Anglia
+2007.0,Pork Sausages,East Midlands
+2007.0,Cheddar,East Midlands
+2007.0,Pork Sausages,West Midlands
+2007.0,Cheddar,West Midlands
+2007.0,Pork Sausages,Yorkshire & Humber
+2007.0,Cheddar,Yorkshire & Humber
+2007.0,Pork Sausages,North West
+2007.0,Cheddar,North West
+2007.0,Pork Sausages,North
+2007.0,Cheddar,North
+2007.0,Pork Sausages,Wales
+2007.0,Cheddar,Wales
+2007.0,Pork Sausages,Scotland
+2007.0,Cheddar,Scotland
+2007.0,Pork Sausages,Northern Ireland
+2007.0,Cheddar,Northern Ireland
+2008.0,Pork Sausages,London
+2008.0,Cheddar,London
+2008.0,Pork Sausages,South East
+2008.0,Cheddar,South East
+2008.0,Pork Sausages,South West
+2008.0,Cheddar,South West
+2008.0,Pork Sausages,East Anglia
+2008.0,Cheddar,East Anglia
+2008.0,Pork Sausages,East Midlands
+2008.0,Cheddar,East Midlands
+2008.0,Pork Sausages,West Midlands
+2008.0,Cheddar,West Midlands
+2008.0,Pork Sausages,Yorkshire & Humber
+2008.0,Cheddar,Yorkshire & Humber
+2008.0,Pork Sausages,North West
+2008.0,Cheddar,North West
+2008.0,Pork Sausages,North
+2008.0,Cheddar,North
+2008.0,Pork Sausages,Wales
+2008.0,Cheddar,Wales
+2008.0,Pork Sausages,Scotland
+2008.0,Cheddar,Scotland
+2008.0,Pork Sausages,Northern Ireland
+2008.0,Cheddar,Northern Ireland
+2009.0,Pork Sausages,London
+2009.0,Cheddar,London
+2009.0,Pork Sausages,South East
+2009.0,Cheddar,South East
+2009.0,Pork Sausages,South West
+2009.0,Cheddar,South West
+2009.0,Pork Sausages,East Anglia
+2009.0,Cheddar,East Anglia
+2009.0,Pork Sausages,East Midlands
+2009.0,Cheddar,East Midlands
+2009.0,Pork Sausages,West Midlands
+2009.0,Cheddar,West Midlands
+2009.0,Pork Sausages,Yorkshire & Humber
+2009.0,Cheddar,Yorkshire & Humber
+2009.0,Pork Sausages,North West
+2009.0,Cheddar,North West
+2009.0,Pork Sausages,North
+2009.0,Cheddar,North
+2009.0,Pork Sausages,Wales
+2009.0,Cheddar,Wales
+2009.0,Pork Sausages,Scotland
+2009.0,Cheddar,Scotland
+2009.0,Pork Sausages,Northern Ireland
+2009.0,Cheddar,Northern Ireland
+2010.0,Pork Sausages,London
+2010.0,Pork Sausages,South East
+2010.0,Pork Sausages,South West
+2010.0,Pork Sausages,East Anglia
+2010.0,Pork Sausages,East Midlands
+2010.0,Pork Sausages,West Midlands
+2010.0,Pork Sausages,Yorkshire & Humber
+2010.0,Pork Sausages,North West
+2010.0,Pork Sausages,North
+2010.0,Pork Sausages,Wales
+2010.0,Pork Sausages,Scotland
+2010.0,Pork Sausages,Northern Ireland
+2011.0,Pork Sausages,London
+2011.0,Pork Sausages,South East
+2011.0,Pork Sausages,South West
+2011.0,Pork Sausages,East Anglia
+2011.0,Pork Sausages,East Midlands
+2011.0,Pork Sausages,West Midlands
+2011.0,Pork Sausages,Yorkshire & Humber
+2011.0,Pork Sausages,North West
+2011.0,Pork Sausages,North
+2011.0,Pork Sausages,Wales
+2011.0,Pork Sausages,Scotland
+2011.0,Pork Sausages,Northern Ireland
+2012.0,Porridge Oats,London
+2012.0,Pork Sausages,London
+2012.0,Porridge Oats,South East
+2012.0,Pork Sausages,South East
+2012.0,Porridge Oats,South West
+2012.0,Pork Sausages,South West
+2012.0,Porridge Oats,East Anglia
+2012.0,Pork Sausages,East Anglia
+2012.0,Porridge Oats,East Midlands
+2012.0,Pork Sausages,East Midlands
+2012.0,Porridge Oats,West Midlands
+2012.0,Pork Sausages,West Midlands
+2012.0,Porridge Oats,Yorkshire & Humber
+2012.0,Pork Sausages,Yorkshire & Humber
+2012.0,Porridge Oats,North West
+2012.0,Pork Sausages,North West
+2012.0,Porridge Oats,North
+2012.0,Pork Sausages,North
+2012.0,Porridge Oats,Wales
+2012.0,Pork Sausages,Wales
+2012.0,Porridge Oats,Scotland
+2012.0,Pork Sausages,Scotland
+2012.0,Porridge Oats,Northern Ireland
+2012.0,Pork Sausages,Northern Ireland
+2013.0,Porridge Oats,London
+2013.0,Pork Sausages,London
+2013.0,Porridge Oats,South East
+2013.0,Pork Sausages,South East
+2013.0,Porridge Oats,South West
+2013.0,Pork Sausages,South West
+2013.0,Porridge Oats,East Anglia
+2013.0,Pork Sausages,East Anglia
+2013.0,Porridge Oats,East Midlands
+2013.0,Pork Sausages,East Midlands
+2013.0,Porridge Oats,West Midlands
+2013.0,Pork Sausages,West Midlands
+2013.0,Porridge Oats,Yorkshire & Humber
+2013.0,Pork Sausages,Yorkshire & Humber
+2013.0,Porridge Oats,North West
+2013.0,Pork Sausages,North West
+2013.0,Porridge Oats,North
+2013.0,Pork Sausages,North
+2013.0,Porridge Oats,Wales
+2013.0,Pork Sausages,Wales
+2013.0,Porridge Oats,Scotland
+2013.0,Pork Sausages,Scotland
+2013.0,Porridge Oats,Northern Ireland
+2013.0,Pork Sausages,Northern Ireland
+2014.0,Porridge Oats,London
+2014.0,Pork Sausages,London
+2014.0,Porridge Oats,South East
+2014.0,Pork Sausages,South East
+2014.0,Porridge Oats,South West
+2014.0,Pork Sausages,South West
+2014.0,Porridge Oats,East Anglia
+2014.0,Pork Sausages,East Anglia
+2014.0,Porridge Oats,East Midlands
+2014.0,Pork Sausages,East Midlands
+2014.0,Porridge Oats,West Midlands
+2014.0,Pork Sausages,West Midlands
+2014.0,Porridge Oats,Yorkshire & Humber
+2014.0,Pork Sausages,Yorkshire & Humber
+2014.0,Porridge Oats,North West
+2014.0,Pork Sausages,North West
+2014.0,Porridge Oats,North
+2014.0,Pork Sausages,North
+2014.0,Porridge Oats,Wales
+2014.0,Pork Sausages,Wales
+2014.0,Porridge Oats,Scotland
+2014.0,Pork Sausages,Scotland
+2014.0,Porridge Oats,Northern Ireland
+2014.0,Pork Sausages,Northern Ireland
+2015.0,Porridge Oats,London
+2015.0,Pork Sausages,London
+2015.0,Porridge Oats,South East
+2015.0,Pork Sausages,South East
+2015.0,Porridge Oats,South West
+2015.0,Pork Sausages,South West
+2015.0,Porridge Oats,East Anglia
+2015.0,Pork Sausages,East Anglia
+2015.0,Porridge Oats,East Midlands
+2015.0,Pork Sausages,East Midlands
+2015.0,Porridge Oats,West Midlands
+2015.0,Pork Sausages,West Midlands
+2015.0,Porridge Oats,Yorkshire & Humber
+2015.0,Pork Sausages,Yorkshire & Humber
+2015.0,Porridge Oats,North West
+2015.0,Pork Sausages,North West
+2015.0,Porridge Oats,North
+2015.0,Pork Sausages,North
+2015.0,Porridge Oats,Wales
+2015.0,Pork Sausages,Wales
+2015.0,Porridge Oats,Scotland
+2015.0,Pork Sausages,Scotland
+2015.0,Porridge Oats,Northern Ireland
+2015.0,Pork Sausages,Northern Ireland
+2016.0,Porridge Oats,London
+2016.0,Pork Sausages,London
+2016.0,Porridge Oats,South East
+2016.0,Pork Sausages,South East
+2016.0,Porridge Oats,South West
+2016.0,Pork Sausages,South West
+2016.0,Porridge Oats,East Anglia
+2016.0,Pork Sausages,East Anglia
+2016.0,Porridge Oats,East Midlands
+2016.0,Pork Sausages,East Midlands
+2016.0,Porridge Oats,West Midlands
+2016.0,Pork Sausages,West Midlands
+2016.0,Porridge Oats,Yorkshire & Humber
+2016.0,Pork Sausages,Yorkshire & Humber
+2016.0,Porridge Oats,North West
+2016.0,Pork Sausages,North West
+2016.0,Porridge Oats,North
+2016.0,Pork Sausages,North
+2016.0,Porridge Oats,Wales
+2016.0,Pork Sausages,Wales
+2016.0,Porridge Oats,Scotland
+2016.0,Pork Sausages,Scotland
+2016.0,Porridge Oats,Northern Ireland
+2016.0,Pork Sausages,Northern Ireland
+2017.0,Porridge Oats,London
+2017.0,Pork Sausages,London
+2017.0,Porridge Oats,South East
+2017.0,Pork Sausages,South East
+2017.0,Porridge Oats,South West
+2017.0,Pork Sausages,South West
+2017.0,Porridge Oats,East Anglia
+2017.0,Pork Sausages,East Anglia
+2017.0,Porridge Oats,East Midlands
+2017.0,Pork Sausages,East Midlands
+2017.0,Porridge Oats,West Midlands
+2017.0,Pork Sausages,West Midlands
+2017.0,Porridge Oats,Yorkshire & Humber
+2017.0,Pork Sausages,Yorkshire & Humber
+2017.0,Porridge Oats,North West
+2017.0,Pork Sausages,North West
+2017.0,Porridge Oats,North
+2017.0,Pork Sausages,North
+2017.0,Porridge Oats,Wales
+2017.0,Pork Sausages,Wales
+2017.0,Porridge Oats,Scotland
+2017.0,Pork Sausages,Scotland
+2017.0,Porridge Oats,Northern Ireland
+2017.0,Pork Sausages,Northern Ireland
+2018.0,Porridge Oats,London
+2018.0,Pork Sausages,London
+2018.0,Porridge Oats,South East
+2018.0,Pork Sausages,South East
+2018.0,Porridge Oats,South West
+2018.0,Pork Sausages,South West
+2018.0,Porridge Oats,East Anglia
+2018.0,Pork Sausages,East Anglia
+2018.0,Porridge Oats,East Midlands
+2018.0,Pork Sausages,East Midlands
+2018.0,Porridge Oats,West Midlands
+2018.0,Pork Sausages,West Midlands
+2018.0,Porridge Oats,Yorkshire & Humber
+2018.0,Pork Sausages,Yorkshire & Humber
+2018.0,Porridge Oats,North West
+2018.0,Pork Sausages,North West
+2018.0,Porridge Oats,North
+2018.0,Pork Sausages,North
+2018.0,Porridge Oats,Wales
+2018.0,Pork Sausages,Wales
+2018.0,Porridge Oats,Scotland
+2018.0,Pork Sausages,Scotland
+2018.0,Porridge Oats,Northern Ireland
+2018.0,Pork Sausages,Northern Ireland
+2019.0,Porridge Oats,London
+2019.0,Pork Sausages,London
+2019.0,Porridge Oats,South East
+2019.0,Pork Sausages,South East
+2019.0,Porridge Oats,South West
+2019.0,Pork Sausages,South West
+2019.0,Porridge Oats,East Anglia
+2019.0,Pork Sausages,East Anglia
+2019.0,Porridge Oats,East Midlands
+2019.0,Pork Sausages,East Midlands
+2019.0,Porridge Oats,West Midlands
+2019.0,Pork Sausages,West Midlands
+2019.0,Porridge Oats,Yorkshire & Humber
+2019.0,Pork Sausages,Yorkshire & Humber
+2019.0,Porridge Oats,North West
+2019.0,Pork Sausages,North West
+2019.0,Porridge Oats,North
+2019.0,Pork Sausages,North
+2019.0,Porridge Oats,Wales
+2019.0,Pork Sausages,Wales
+2019.0,Porridge Oats,Scotland
+2019.0,Pork Sausages,Scotland
+2019.0,Porridge Oats,Northern Ireland
+2019.0,Pork Sausages,Northern Ireland
+2020.0,Porridge Oats,London
+2020.0,Pork Sausages,London
+2020.0,Porridge Oats,South East
+2020.0,Pork Sausages,South East
+2020.0,Porridge Oats,South West
+2020.0,Pork Sausages,South West
+2020.0,Porridge Oats,East Anglia
+2020.0,Pork Sausages,East Anglia
+2020.0,Porridge Oats,East Midlands
+2020.0,Pork Sausages,East Midlands
+2020.0,Porridge Oats,West Midlands
+2020.0,Pork Sausages,West Midlands
+2020.0,Porridge Oats,Yorkshire & Humber
+2020.0,Pork Sausages,Yorkshire & Humber
+2020.0,Porridge Oats,North West
+2020.0,Pork Sausages,North West
+2020.0,Porridge Oats,North
+2020.0,Pork Sausages,North
+2020.0,Porridge Oats,Wales
+2020.0,Pork Sausages,Wales
+2020.0,Porridge Oats,Scotland
+2020.0,Pork Sausages,Scotland
+2020.0,Porridge Oats,Northern Ireland
+2020.0,Pork Sausages,Northern Ireland
+2021.0,Porridge Oats,London
+2021.0,Pork Sausages,London
+2021.0,Porridge Oats,South East
+2021.0,Pork Sausages,South East
+2021.0,Porridge Oats,South West
+2021.0,Pork Sausages,South West
+2021.0,Porridge Oats,East Anglia
+2021.0,Pork Sausages,East Anglia
+2021.0,Porridge Oats,East Midlands
+2021.0,Pork Sausages,East Midlands
+2021.0,Porridge Oats,West Midlands
+2021.0,Pork Sausages,West Midlands
+2021.0,Porridge Oats,Yorkshire & Humber
+2021.0,Pork Sausages,Yorkshire & Humber
+2021.0,Porridge Oats,North West
+2021.0,Pork Sausages,North West
+2021.0,Porridge Oats,North
+2021.0,Pork Sausages,North
+2021.0,Porridge Oats,Wales
+2021.0,Pork Sausages,Wales
+2021.0,Porridge Oats,Scotland
+2021.0,Pork Sausages,Scotland
+2021.0,Porridge Oats,Northern Ireland
+2021.0,Pork Sausages,Northern Ireland
+2022.0,Porridge Oats,London
+2022.0,Pork Sausages,London
+2022.0,Porridge Oats,South East
+2022.0,Pork Sausages,South East
+2022.0,Porridge Oats,South West
+2022.0,Pork Sausages,South West
+2022.0,Porridge Oats,East Anglia
+2022.0,Pork Sausages,East Anglia
+2022.0,Porridge Oats,East Midlands
+2022.0,Pork Sausages,East Midlands
+2022.0,Porridge Oats,West Midlands
+2022.0,Pork Sausages,West Midlands
+2022.0,Porridge Oats,Yorkshire & Humber
+2022.0,Pork Sausages,Yorkshire & Humber
+2022.0,Porridge Oats,North West
+2022.0,Pork Sausages,North West
+2022.0,Porridge Oats,North
+2022.0,Pork Sausages,North
+2022.0,Porridge Oats,Wales
+2022.0,Pork Sausages,Wales
+2022.0,Porridge Oats,Scotland
+2022.0,Pork Sausages,Scotland
+2022.0,Porridge Oats,Northern Ireland
+2022.0,Pork Sausages,Northern Ireland
+2023.0,Porridge Oats,London
+2023.0,Pork Sausages,London
+2023.0,Porridge Oats,South East
+2023.0,Pork Sausages,South East
+2023.0,Porridge Oats,South West
+2023.0,Pork Sausages,South West
+2023.0,Porridge Oats,East Anglia
+2023.0,Pork Sausages,East Anglia
+2023.0,Porridge Oats,East Midlands
+2023.0,Pork Sausages,East Midlands
+2023.0,Porridge Oats,West Midlands
+2023.0,Pork Sausages,West Midlands
+2023.0,Porridge Oats,Yorkshire & Humber
+2023.0,Pork Sausages,Yorkshire & Humber
+2023.0,Porridge Oats,North West
+2023.0,Pork Sausages,North West
+2023.0,Porridge Oats,North
+2023.0,Pork Sausages,North
+2023.0,Porridge Oats,Wales
+2023.0,Pork Sausages,Wales
+2023.0,Porridge Oats,Scotland
+2023.0,Pork Sausages,Scotland
+2023.0,Porridge Oats,Northern Ireland
+2023.0,Pork Sausages,Northern Ireland
+2024.0,Porridge Oats,London
+2024.0,Pork Sausages,London
+2024.0,Porridge Oats,South East
+2024.0,Pork Sausages,South East
+2024.0,Porridge Oats,South West
+2024.0,Pork Sausages,South West
+2024.0,Porridge Oats,East Anglia
+2024.0,Pork Sausages,East Anglia
+2024.0,Porridge Oats,East Midlands
+2024.0,Pork Sausages,East Midlands
+2024.0,Porridge Oats,West Midlands
+2024.0,Pork Sausages,West Midlands
+2024.0,Porridge Oats,Yorkshire & Humber
+2024.0,Pork Sausages,Yorkshire & Humber
+2024.0,Porridge Oats,North West
+2024.0,Pork Sausages,North West
+2024.0,Porridge Oats,North
+2024.0,Pork Sausages,North
+2024.0,Porridge Oats,Wales
+2024.0,Pork Sausages,Wales
+2024.0,Porridge Oats,Scotland
+2024.0,Pork Sausages,Scotland
+2024.0,Porridge Oats,Northern Ireland
+2024.0,Pork Sausages,Northern Ireland

@@ -1,0 +1,25 @@
+Address,Price (USD),Rating,Reviews
+Barnet,85.0,7.1,1200.0
+Brent,76.0,7.6,2047.0
+Camden,120.0,7.8,2384.0
+City of London,170.0,8.5,1375.0
+Croydon,58.0,6.9,607.0
+Ealing,84.0,8.0,2331.5
+Greenwich,89.5,8.05,1928.5
+Hackney,124.0,8.350000000000001,1633.0
+Hammersmith and Fulham,90.5,7.95,1601.0
+Haringey,92.5,6.5,1369.0
+Hounslow,100.0,8.4,2885.0
+Islington,115.0,7.9,1632.0
+Kensington and Chelsea,123.0,8.0,1741.0
+Lambeth,125.0,8.1,2742.0
+Lewisham,85.0,8.1,630.0
+Merton,121.0,8.3,476.0
+Newham,81.0,8.1,3827.0
+Redbridge,77.0,7.6,1039.0
+Richmond upon Thames,100.0,8.6,831.0
+Southwark,129.0,8.1,2101.0
+Tower Hamlets,107.0,8.2,2023.0
+Waltham Forest,74.0,7.8,685.0
+Wandsworth,119.0,8.3,915.0
+Westminster,139.0,7.9,1861.0

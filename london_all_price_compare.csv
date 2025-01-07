@@ -1,34 +1,67 @@
-﻿Address,Airbnb Price (Pounds),Bookingcom Price (Pounds)
-Barking and Dagenham,60,0
-Barnet,75,68
-Bexley,54,0
-Brent,79,60.8
-Bromley,65,0
-Camden,108.5,96
-City of London,165,136
-Croydon,60,46.4
-Ealing,79,67.2
-Enfield,63,0
-Greenwich,75,71.6
-Hackney,99,99.2
-Hammersmith and Fulham,103,72.4
-Haringey,73,74
-Harrow,69,0
-Havering,60,0
-Hillingdon,63,0
-Hounslow,71,80
-Islington,105,92
-Kensington and Chelsea,150,98.4
-Kingston upon Thames,73.5,0
-Lambeth,80,100
-Lewisham,70,68
-Merton,80,96.8
-Newham,75,64
-Redbridge,61,61.6
-Richmond upon Thames,95,80
-Southwark,86,103.2
-Sutton,60,0
-Tower Hamlets,88,85.6
-Waltham Forest,69,59.2
-Wandsworth,90,95.2
-Westminster,142,111.2
+﻿Address,Accoms Type,Avg Price (Pounds)
+Barking and Dagenham,Airbnb,60
+Barnet,Airbnb,75
+Bexley,Airbnb,54
+Brent,Airbnb,79
+Bromley,Airbnb,65
+Camden,Airbnb,108.5
+City of London,Airbnb,165
+Croydon,Airbnb,60
+Ealing,Airbnb,79
+Enfield,Airbnb,63
+Greenwich,Airbnb,75
+Hackney,Airbnb,99
+Hammersmith and Fulham,Airbnb,103
+Haringey,Airbnb,73
+Harrow,Airbnb,69
+Havering,Airbnb,60
+Hillingdon,Airbnb,63
+Hounslow,Airbnb,71
+Islington,Airbnb,105
+Kensington and Chelsea,Airbnb,150
+Kingston upon Thames,Airbnb,73.5
+Lambeth,Airbnb,80
+Lewisham,Airbnb,70
+Merton,Airbnb,80
+Newham,Airbnb,75
+Redbridge,Airbnb,61
+Richmond upon Thames,Airbnb,95
+Southwark,Airbnb,86
+Sutton,Airbnb,60
+Tower Hamlets,Airbnb,88
+Waltham Forest,Airbnb,69
+Wandsworth,Airbnb,90
+Westminster,Airbnb,142
+Barking and Dagenham,Hotels & Hostels,0
+Barnet,Hotels & Hostels,68
+Bexley,Hotels & Hostels,0
+Brent,Hotels & Hostels,60.8
+Bromley,Hotels & Hostels,0
+Camden,Hotels & Hostels,96
+City of London,Hotels & Hostels,136
+Croydon,Hotels & Hostels,46.4
+Ealing,Hotels & Hostels,67.2
+Enfield,Hotels & Hostels,0
+Greenwich,Hotels & Hostels,71.6
+Hackney,Hotels & Hostels,99.2
+Hammersmith and Fulham,Hotels & Hostels,72.4
+Haringey,Hotels & Hostels,74
+Harrow,Hotels & Hostels,0
+Havering,Hotels & Hostels,0
+Hillingdon,Hotels & Hostels,0
+Hounslow,Hotels & Hostels,80
+Islington,Hotels & Hostels,92
+Kensington and Chelsea,Hotels & Hostels,98.4
+Kingston upon Thames,Hotels & Hostels,0
+Lambeth,Hotels & Hostels,100
+Lewisham,Hotels & Hostels,68
+Merton,Hotels & Hostels,96.8
+Newham,Hotels & Hostels,64
+Redbridge,Hotels & Hostels,61.6
+Richmond upon Thames,Hotels & Hostels,80
+Southwark,Hotels & Hostels,103.2
+Sutton,Hotels & Hostels,0
+Tower Hamlets,Hotels & Hostels,85.6
+Waltham Forest,Hotels & Hostels,59.2
+Wandsworth,Hotels & Hostels,95.2
+Westminster,Hotels & Hostels,111.2

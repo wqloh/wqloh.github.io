@@ -1,0 +1,58 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/london_airbnb_commercialised.csv"
+    },
+    "height": 300,
+    "width": 150,
+    "title": {
+      "text": "Airbnb: Is Listing Instantly Bookable?",
+      "subtitle": [
+        "Being instantly bookable means the host does not need to accept the booking request.",
+        "It is an indicator of a commercial listing.",
+        "Source: Inside Airbnb",
+        ""
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "subtitleColor": "black",
+      "anchor": "start",
+      "color": "black"
+    },
+    "transform": [
+      {
+        "aggregate": [{"op": "count", "as": "count"}],
+        "groupby": ["instant_bookable"]
+      },
+      {
+        "window": [{"op": "sum", "field": "count", "as": "total"}],
+        "frame": [null, null]
+      },
+      {"calculate": "datum.count / datum.total * 100", "as": "percentage"}
+    ],
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "instant_bookable",
+        "type": "nominal",
+        "title": null,
+        "axis": {"labelFontSize": 10}
+      },
+      "y": {
+        "field": "percentage",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"labelExpr": "datum.label+'%'"}
+      },
+      "color": {
+        "field": "instant_bookable",
+        "type": "nominal",
+        "legend": null,
+        "scale": {"range": ["#ff7f50", "#9370db"]}
+      },
+      "tooltip": [
+        {"field": "count", "title": "No. of listings"},
+        {"field": "percentage", "title": "% of listings", "format": ".1f"}
+      ]
+    }
+  }

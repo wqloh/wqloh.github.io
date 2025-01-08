@@ -1,0 +1,174 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Airbnb Listings for 2D1N Stay in London",
+      "subtitle": ["Source: Inside Airbnb"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "subtitlePadding": 5,
+      "anchor": "start",
+      "color": "black"
+    },
+    "width": 400,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/london_airbnb_selector.csv",
+      "format": {"type": "csv"}
+    },
+    "params": [
+      {
+        "name": "chooseRoomType",
+        "value": "Entire home/apt",
+        "bind": {
+          "input": "select",
+          "options": [
+            "Entire home/apt",
+            "Private room",
+            "Shared room",
+            "Hotel room"
+          ],
+          "name": "Room Type:"
+        }
+      },
+      {
+        "name": "chooseNeighbourhood",
+        "value": "Brent",
+        "bind": {
+          "input": "select",
+          "options": [
+            "Barking and Dagenham",
+            "Barnet",
+            "Brent",
+            "Bromley",
+            "Camden",
+            "City of London",
+            "Croydon",
+            "Ealing",
+            "Enfield",
+            "Greenwich",
+            "Hackney",
+            "Hammersmith and Fulham",
+            "Haringey",
+            "Harrow",
+            "Havering",
+            "Hillingdon",
+            "Hounslow",
+            "Islington",
+            "Kensington and Chelsea",
+            "Kingston upon Thames",
+            "Lambeth",
+            "Lewisham",
+            "Merton",
+            "Newham",
+            "Redbridge",
+            "Richmond upon Thames",
+            "Southwark",
+            "Sutton",
+            "Tower Hamlets",
+            "Waltham Forest",
+            "Wandsworth",
+            "Westminster"
+          ],
+          "name": "Neighbourhood:"
+        }
+      },
+      {
+        "name": "minPrice",
+        "value": 1,
+        "bind": {
+          "input": "range",
+          "min": 1,
+          "max": 5500,
+          "step": 1,
+          "name": "Min Price:"
+        }
+      },
+      {
+        "name": "maxPrice",
+        "value": 1000,
+        "bind": {
+          "input": "range",
+          "min": 1,
+          "max": 5500,
+          "step": 1,
+          "name": "Max Price:"
+        }
+      },
+      {
+        "name": "minRating",
+        "value": 1,
+        "bind": {
+          "input": "range",
+          "min": 1,
+          "max": 5,
+          "step": 0.1,
+          "name": "Min Rating:"
+        }
+      },
+      {
+        "name": "maxRating",
+        "value": 5,
+        "bind": {
+          "input": "range",
+          "min": 1,
+          "max": 5,
+          "step": 0.1,
+          "name": "Max Rating:"
+        }
+      },
+      {"name": "hover", "select": {"type": "point", "on": "pointerover"}}
+    ],
+    "transform": [
+      {"filter": "datum.room_type == chooseRoomType"},
+      {"filter": "datum.neighbourhood == chooseNeighbourhood"},
+      {"filter": "datum.price > minPrice & datum.price < maxPrice"},
+      {
+        "filter": "datum.review_scores_rating > minRating & datum.review_scores_rating < maxRating"
+      }
+    ],
+    "mark": {"type": "circle", "opacity": 0.7, "tooltip": true},
+    "encoding": {
+      "x": {
+        "field": "review_scores_rating",
+        "type": "quantitative",
+        "title": "Rating (out of 10)",
+        "scale": {"domain": {"param": "minRating"}},
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "price",
+        "type": "quantitative",
+        "axis": {"title": "Price", "labelExpr": "'£'+datum.label", "grid": false}
+      },
+      "size": {
+        "condition": {"param": "hover", "value": 150, "empty": false},
+        "value": 50
+      },
+      "opacity": {
+        "condition": {"param": "hover", "value": 1, "empty": false},
+        "value": 0.5
+      },
+      "color": {
+        "condition": {"param": "hover", "value": "blue", "empty": false},
+        "value": "red"
+      },
+      "order": {
+        "condition": {"param": "hover", "value": 1, "empty": false},
+        "value": 0
+      },
+      "tooltip": [
+        {"field": "name", "type": "nominal"},
+        {"field": "price", "type": "quantitative", "title": "Price (£)"},
+        {
+          "field": "review_scores_rating",
+          "type": "quantitative",
+          "title": "Rating"
+        },
+        {
+          "field": "number_of_reviews",
+          "type": "quantitative",
+          "title": "No. Reviews"
+        }
+      ]
+    }
+  }

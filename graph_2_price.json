@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+  "title": {
+      "text": "2D1N Stay in London for 2 Pax - Price by Neighbourhood",
+      "subtitle":["Source: Inside Airbnb, Booking.com",""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "subtitleColor":"black",
+      "anchor": "start",
+      "color": "black"},
+
+   "data": {"url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/london_all_price_compare.csv"},
+ 
+  "mark": {
+    "type":"bar",
+    "clip":true,
+    "color":"rgba(128,0,0,.8)",
+    "size":20},
+
+  "height":100,
+  "width":100,
+ 
+  "encoding": {
+    "x": {
+      "field": "Accoms Type", 
+      "type": "nominal",
+      "axis": {"title": null,"grid": false}
+      },
+
+    "y": {
+      "field": "Avg Price (Pounds)", 
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "labelExpr": "'£'+datum.label"}
+      },
+    
+    "facet": {
+      "field":"Address",
+      "type": "nominal",
+      "columns": 6,
+      "title":null
+    },
+    
+    "color": {
+      "field": "Accoms Type", 
+      "type": "nominal",
+      "scale":{"range":["#e6224b", "#179fdb"]},
+      "legend":{"orient": "top"}
+     }
+ },
+
+    "resolve": {"scale": {"x": "independent"}}
+}

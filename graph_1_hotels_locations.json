@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/london_neighbourhoods.geojson",
+    "format": {"property": "features"}
+  },
+  "title": {
+    "text": "2D1N Stay for 2 Pax in London - Hotels and Hostels",
+    "subtitle": ["Source: Booking.com"]
+  },
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgrey",
+        "stroke": "black",
+        "strokeWidth": 0.5
+      },
+      "transform": [{"calculate": "'NA'", "as": "data"}],
+      "encoding": {
+        "tooltip": [
+          {"field": "properties.neighbourhood", "title": "Neighbourhood"},
+          {"field": "data"}
+        ]
+      }
+    },
+    {
+      "encoding": {
+        "color": {
+          "field": "Percentage of sample",
+          "legend": {"title": "% of Sample Listings"},
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "properties.neighbourhood", "title": "Neighbourhood"},
+          {"field": "Number of listings", "title": "No. of Listings"},
+          {"field": "Percentage of sample", "title": "% of Sample"}
+        ]
+      },
+      "mark": {"type": "geoshape"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/London_attractions.csv",
+        "format": {"type": "csv"}
+      },
+      "mark": {"type": "circle", "size": 30},
+      "params": [
+        {"name": "hover", "select": {"type": "point", "on": "pointerover"}}
+      ],
+      "encoding": {
+        "longitude": {"field": "Longitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"},
+        "tooltip": [{"field": "Name", "title": "Attraction"}],
+        "size": {
+          "condition": {"param": "hover", "value": 100, "empty": false},
+          "value": 50
+        },
+        "opacity": {
+          "condition": {"param": "hover", "value": 1, "empty": false},
+          "value": 0.5
+        },
+        "color": {
+          "condition": {"param": "hover", "value": "orange", "empty": false},
+          "value": "red"
+        },
+        "order": {
+          "condition": {"param": "hover", "value": 1, "empty": false},
+          "value": 0
+        }
+      }
+    }
+  ],
+  "transform": [
+    {
+      "lookup": "properties.neighbourhood",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/london_hotels_price_rating_reviews.csv"
+        },
+        "key": "Address",
+        "fields": [
+          "Address",
+          "Number of listings",
+          "Percentage of sample"
+        ]
+      }
+    }
+  ]
+}

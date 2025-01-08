@@ -102,7 +102,7 @@
             Just over half of the listings have the host based in London, meaning there's some opportunity for interactions with a local (the host) through the accommodation. Moreover, only 30% are instantly bookable, which is an indicator of a commercial listing.
         </p>
         <p>
-            However, more than 60% of listings are entire homes or apartments, mea
+            However, more than 60% of listings are entire homes or apartments, straying far from Airbnb's original intention to allow guests to experience living with locals in the same apartment.
         </p>
     </div>
     <figure id="host_location"></figure> 
@@ -112,12 +112,9 @@
 
     <section>
         <div class="chart-description">
-            <h3>Graph 4: a graph that shows pics of airbnbs</h3>
+            <h3>Section 4: Overview of Airbnb Listings</h3>
             <p> 
-                price by rating scatterplot of 2 pax airbnb accoms. tooltip neighbourhood. show that the top sccoms r not all in central ldn
-             user selects for room type and/or instant bookable
-             filter min. 10 or 100 reviews
-             from the 2 pax dataset, filtered out properties without a price or rating score. n obs: 18287
+                Using the Airbnb dataset with just listings for 2 pax (38,773 listings), I filtered out listings without a price or rating score, to obtain a dataset of 18287 listings. This tool can be used to narrow down Airbnb listings according to one's preferences regarding room type, neighbourhood, price and rating. 
             </p>
         </div>
         <figure id="airbnb_listings"></figure> 
@@ -126,21 +123,23 @@
    <section>
     <div class="chart-description">
         <h3>Challenges</h3>
+        <p>
+            I could not scrape Airbnb myself as this requires API developer authorisation from Airbnb. Thus, I had to rely on Inside Airbnb's quarterly scraped datasets. While each dataset is comprehensive, I had trouble aligning the Airbnb and Hotel/Hostel datasets in terms of date of stay/scrape: the Airbnb one was scraped on 6 Sep 2024, while I scraped Booking.com on 30 Dec 2024 for a 19-20 Jan 2025 stay. Seasonal differences in prices can affect the visualisations.
+        </p>
         <p> 
-            The Airbnb and hotels data were scraped on 6 September 2024 and January 2025 respectively. 
-            Couldn't scrape latitude and longitude data for the hotels on Booking.com
+            Scraping Booking.com was challenging due to the walls of code they have to deter scraping. The list of hotels and hostels on Booking.com is also incomplete, aside from the issue that it only displays a maximum of 1000 listings even though it claims there are more. Thus, where applicable, I compared the 2 datasets using averages (median) and percentages of sample.
         </p>
     </div>
 </section>
 
    <script>
-    let fig_1 = "Project/graph_1_hotels_locations.json"
-    let fig_2 = "Project/graph_1_airbnb_locations.json"  
-    let fig_3 = "Project/graph_2_price.json"
-    let fig_4 = "Project/graph_3_host_location.json"
-    let fig_5 = "Project/graph_3_instant_bookable.json"
-    let fig_6 = "Project/graph_3_room_type.json"
-    let fig_7 = "Project/graph_4_airbnb_listings.json"
+    let fig_1 = "graph_1_hotels_locations.json"
+    let fig_2 = "graph_1_airbnb_locations.json"  
+    let fig_3 = "graph_2_price.json"
+    let fig_4 = "graph_3_host_location.json"
+    let fig_5 = "graph_3_instant_bookable.json"
+    let fig_6 = "graph_3_room_type.json"
+    let fig_7 = "graph_4_airbnb_listings.json"
 
     vegaEmbed('#hotels_locations', fig_1)
     vegaEmbed('#airbnb_locations', fig_2)

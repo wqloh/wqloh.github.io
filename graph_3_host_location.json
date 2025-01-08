@@ -1,53 +1,94 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/london_airbnb_commercialised.csv"
-    },
-    "height": 300,
-    "width": 150,
-    "title": {
-      "text": "Airbnb: Is Host Based in London?",
-      "subtitle": ["Source: Inside Airbnb", ""],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "subtitleColor": "black",
-      "anchor": "start",
-      "color": "black"
-    },
-    "transform": [
-      {
-        "aggregate": [{"op": "count", "as": "count"}],
-        "groupby": ["host_location_is_london"]
-      },
-      {
-        "window": [{"op": "sum", "field": "count", "as": "total"}],
-        "frame": [null, null]
-      },
-      {"calculate": "datum.count / datum.total * 100", "as": "percentage"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/london_airbnb_commercialised.csv"
+  },
+  "height": 300,
+  "width": 150,
+  "title": {
+    "text": "Airbnb: Is Host Based in London?",
+    "subtitle": [
+      "Source: Inside Airbnb",
+      ""
     ],
-    "mark": "bar",
-    "encoding": {
-      "x": {
-        "field": "host_location_is_london",
-        "type": "nominal",
-        "title": null,
-        "axis": {"labelFontSize": 10}
-      },
-      "y": {
-        "field": "percentage",
-        "type": "quantitative",
-        "title": null,
-        "axis": {"labelExpr": "datum.label+'%'"}
-      },
-      "color": {
-        "field": "host_location_is_london",
-        "type": "nominal",
-        "legend": null,
-        "scale": {"range": ["#ff7f50", "#9370db"]}
-      },
-      "tooltip": [
-        {"field": "count", "title": "No. of listings"},
-        {"field": "percentage", "title": "% of listings", "format": ".1f"}
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleColor": "black",
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "count",
+          "as": "count"
+        }
+      ],
+      "groupby": [
+        "host_location_is_london"
       ]
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "count",
+          "as": "total"
+        }
+      ],
+      "frame": [
+        null,
+        null
+      ]
+    },
+    {
+      "calculate": "datum.count / datum.total * 100",
+      "as": "percentage"
     }
+  ],
+  "mark": {
+    "type": "bar",
+    "size": 20
+  },
+  "encoding": {
+    "x": {
+      "field": "host_location_is_london",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "labelFontSize": 10
+      }
+    },
+    "y": {
+      "field": "percentage",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "labelExpr": "datum.label+'%'"
+      }
+    },
+    "color": {
+      "field": "host_location_is_london",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "range": [
+          "#ff7f50",
+          "#9370db"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "count",
+        "title": "No. of listings"
+      },
+      {
+        "field": "percentage",
+        "title": "% of listings",
+        "format": ".1f"
+      }
+    ]
   }
+}

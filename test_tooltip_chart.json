@@ -1,0 +1,18 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple bar chart with embedded data.",
+    "data": {
+      "values": [
+        {"a": "A", "b": 28, "image": "https://assets.digitalcontent.marksandspencer.app/image/upload/w_1024,q_auto,f_auto/SD_FD_F09A_29290871_NC_X_EC_90"}
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "a", "type": "nominal", "axis": {"labelAngle": 0}},
+      "y": {"field": "b", "type": "quantitative"},
+      "tooltip": [
+        {"field": "image"}
+      ]
+    }
+  }
+  

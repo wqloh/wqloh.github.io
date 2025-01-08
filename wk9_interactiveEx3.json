@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 230,
+  "height": 400,
+  "title": {
+    "text": "Where do our elderly live?",
+    "subtitle": [
+      "Percent of citizen over the age of 60  in the year 2023",
+      "Source: Open Government Data of Thailand"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2013,
+      "bind": {
+        "input": "range",
+        "min": 2013,
+        "max": 2023,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/b-kanitroj/b-kanitroj.github.io/refs/heads/main/cc7_thailand60pop.csv"
+  },
+  "transform": [
+    {
+      "lookup": "name_en",
+      "from": {
+        "data": {
+          "url": "https://gist.githubusercontent.com/jeepkd/4e31e6a10f8297b9de50c62856927ecf/raw/9899d9f1ca4cd7c5f103a9b2455d9a01f0c8f895/thailand.json",
+          "format": {"property": "features"}
+        },
+        "key": "properties.NAME_1",
+        "fields": ["type", "geometry", "properties"]
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "fill": "lightgray"},
+      "encoding": {
+        "tooltip": [
+          {"field": "properties.NAME_1", "type": "nominal", "title": "Province"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "geoshape"},
+      "transform": [{"filter": "datum.year == selectedYear"}],
+      "encoding": {
+        "color": {"field": "percent", "type": "quantitative"},
+        "tooltip": [
+          {
+            "field": "properties.NAME_1",
+            "type": "nominal",
+            "title": "Province"
+          },
+          {"field": "percent", "type": "quantitative", "title": "Percent"}
+        ]
+      }
+    }
+  ]
+}

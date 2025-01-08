@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html> 
+<head>           
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Project</title>  
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+    <style>
+        #chartGrid {
+            display: flex;
+        }
+
+        #vg-tooltip-element img{
+    width: 100px;
+    height: 100px;
+        }
+
+    </style>    
+</head> 
+<body> 
+    <h1 class="big" style="margin-bottom: 0px; text-align: center">
+        Data Visualisation Autumn Term 24/25
+    </h1>
+    <p style="margin-top: 0px; color: darkblue; text-align: center">
+        Wen Qi LOH
+    </p>  
+    <nav style="text-align: center;">
+    <a href="index.html">Home</a> |   
+    <a href="portfolio.html">Portfolio</a> | 
+    <a href="project.html">Project</a> |    
+    <a href="others.html">In-Class Exercises</a> |        
+    <a href="https://github.com/wqloh">GitHub</a>
+    </nav>
+
+    <h2 style="text-align: center">Perception vs. Reality: Do Airbnbs Truly Unlock More Local, Diverse and Affordable Travel Options for Tourists in London? </h2>
+    <section>
+       <div class="chart-description">
+           <h3>Introduction & Aims</h3>
+           <p> 
+            Airbnb began with two hosts welcoming three guests into their home in 2007. Since then, it has expanded to over 8 million active listings in over 100 thousand cities and towns. Its unique value propositions are allowing guests to experience the city through the lens of a local, by living with locals and in local neighbourhoods, and providing a cheaper, more flexible alternative to traditional hotels and hostels. They also relieve pressure on the city centre where traditional accommodations are typically located by offering a wider geographical spread.
+           </p>
+           <p>
+            However, there is an emerging phenomenon globally of property management companies mass leasing out entire apartments on Airbnb, eliminating opportunities for local interaction. Once a reliably affordable option for cash-strapped backpackers, there have also been complaints of prices rising to levels similar to or even higher than hostels and hotels. 
+           </p>
+           <p>
+            This project investigates if Airbnb truly unlocks more local, diverse and affordable accommodation options for tourists in London. Findings could be used by the Mayor of London and government agencies to work with Airbnb and other accommodation partners to continue to provide tourists with a diverse set of accommodation offerings that meets their diverse financial, geographical and experiential needs and desires. 
+           </p>
+       </div>
+   </section>
+
+   <section>
+    <div class="chart-description">
+        <h3>Data</h3>
+        <p>
+            <a href="https://insideairbnb.com/">Inside Airbnb</a>: A ground-up project that publishes quarterly data scraped from Airbnb. I used their London listings dataset scraped on 6 Sep 2024 which contains 96,182 listings. I also used their London neighbourhood geojson file.
+        </p>
+        <p>
+            <a href="Booking.com">Booking.com</a>: On 30 December 2024, I searched for an accommodation for 2 pax in London for 19-20 Jan 2025. After filtering for just hotels and hostels, I obtained 1000 displayed results which I scraped.
+        </p>
+        <p>
+            Google: I scraped London's top 50 attractions by number of Google reviews.
+        </p>
+    </div>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Section 1: Airbnb vs. Hotels & Hostels — Geographic Distribution</h3>
+            <p> 
+            These choropleth maps show the geographical distribution of Hotel/Hostel vs. Airbnb listings across London. The Airbnb dataset was filtered to just listings for 2 pax to match the Booking.com dataset (38,773 listings). As reference, London's top 50 attractions appear as red points.
+            </p>
+            <p>
+                Hotels and hostels are concentrated in Westminster and Camden where the most popular attractions are also clustered, with minimal to even no coverage of outer neighbourhoods. Airbnb's geographical distribution is more even, with at least some coverage of all neighbourhoods.
+            </p>
+        </div>
+        <figure id="hotels_locations"></figure> 
+        <figure id="airbnb_locations"></figure> 
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Section 2: Airbnb vs. Hotels & Hostels — Price by Neighbourhood</h3>
+            <p> 
+            This trellis chart consists of 33 bar charts comparing the prices of Airbnb and Hotel/Hostel listings for 2 pax by neighbourhood.
+            </p>
+            <p>
+                Surprisingly, Airbnb listings are just as or even more expensive than hotels and hostels in most neighbourhoods.
+            </p>
+        </div>
+        <figure id="price_compare"></figure> 
+    </section>
+   
+   <section>
+    <div class="chart-description">
+        <h3>Section 3: Airbnb: Local Experiences?</h3>
+        <p> 
+         Using the original Airbnb dataset of 96,182 listings, I created bar charts showing (a) if the host is based in London, (b) if the listing is instantly bookable, and (c) the listing's room type.
+        </p>
+        <p>
+            Just over half of the listings have the host based in London, meaning there's some opportunity for interactions with a local (the host) through the accommodation. Moreover, only 30% are instantly bookable, which is an indicator of a commercial listing.
+        </p>
+        <p>
+            However, more than 60% of listings are entire homes or apartments, mea
+        </p>
+    </div>
+    <figure id="host_location"></figure> 
+    <figure id="instant_bookable"></figure> 
+    <figure id="room_type"></figure> 
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 4: a graph that shows pics of airbnbs</h3>
+            <p> 
+                price by rating scatterplot of 2 pax airbnb accoms. tooltip neighbourhood. show that the top sccoms r not all in central ldn
+             user selects for room type and/or instant bookable
+             filter min. 10 or 100 reviews
+             from the 2 pax dataset, filtered out properties without a price or rating score. n obs: 18287
+            </p>
+        </div>
+        <figure id="airbnb_listings"></figure> 
+    </section>
+
+   <section>
+    <div class="chart-description">
+        <h3>Challenges</h3>
+        <p> 
+            The Airbnb and hotels data were scraped on 6 September 2024 and January 2025 respectively. 
+            Couldn't scrape latitude and longitude data for the hotels on Booking.com
+        </p>
+    </div>
+</section>
+
+   <script>
+    let fig_1 = "Project/graph_1_hotels_locations.json"
+    let fig_2 = "Project/graph_1_airbnb_locations.json"  
+    let fig_3 = "Project/graph_2_price.json"
+    let fig_4 = "Project/graph_3_host_location.json"
+    let fig_5 = "Project/graph_3_instant_bookable.json"
+    let fig_6 = "Project/graph_3_room_type.json"
+    let fig_7 = "Project/graph_4_airbnb_listings.json"
+
+    vegaEmbed('#hotels_locations', fig_1)
+    vegaEmbed('#airbnb_locations', fig_2)
+    vegaEmbed('#price_compare', fig_3)
+    vegaEmbed('#host_location', fig_4)
+    vegaEmbed('#instant_bookable', fig_5)
+    vegaEmbed('#room_type', fig_6)
+    vegaEmbed('#airbnb_listings', fig_7)
+
+    </script>
+</body> 
+</html> 

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/wk7_japan_prefectures.geojson",
+    "format": {"property": "features"}
+  },
+  "title": {
+    "text": "COVID19 Positive Cases & Fatalities in Japan",
+    "subtitle": [
+      "8 May 2020 - 7 May 2023",
+      "Source: Code for Japan, Stop COVID19",
+      ""
+    ]
+  },
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgrey",
+        "stroke": "black",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "tooltip": [
+          {"field": "properties.NAME", "title": "Prefecture"},
+          {"field": "data"}
+        ]
+      }
+    },
+    {
+      "encoding": {
+        "color": {
+          "field": "Positive",
+          "scale": {"type": "log"},
+          "legend": {"title": "Positive cases"},
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "properties.NAME", "title": "Prefecture"},
+          {"field": "Positive", "title": "Positive cases"}
+        ]
+      },
+      "mark": {"type": "geoshape"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/wk7_fatalities_jpn.csv",
+        "format": {"type": "csv"}
+      },
+      "params": [
+        {"name": "hover", "select": {"type": "point", "on": "pointerover"}}
+      ],
+      "mark": {"type": "circle", "size": 30},
+      "encoding": {
+        "longitude": {"field": "lng", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "tooltip": [
+          {"field": "NAME", "title": "Prefecture"},
+          {"field": "Fatal", "title": "Fatalities"}
+        ],
+        "size": {"field": "Fatal", "type": "quantitative", "scale": {"range": [10, 200]}, "legend": {"title": "Fatalities"}},
+        "opacity": {
+          "condition": {"param": "hover", "value": 1, "empty": false},
+          "value": 0.5
+        },
+        "color": {
+          "condition": {"param": "hover", "value": "orange", "empty": false},
+          "value": "red"
+        },
+        "order": {
+          "condition": {"param": "hover", "value": 1, "empty": false},
+          "value": 0
+        }
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum.properties.NAME == 'Naoasaki' ? {'NAME': 'Nagasaki'} : datum.properties",
+      "as": "properties"
+    },
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/wk7_COVID_japan_prefecture_7-5-2023.csv"
+        },
+        "key": "Prefecture",
+        "fields": ["Positive"]
+      }
+    }
+  ]
+}

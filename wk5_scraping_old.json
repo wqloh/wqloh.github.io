@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/wk5_scraping_books.csv"
+    },
+    "title": {
+        "text": "Books on sale",
+        "subtitle": [
+            "GDP per capita (2021 PPP) and CO2 emissions, (excluding land use change and forestry)",
+            "Source: World Bank",
+            ""
+        ],
+        "anchor": "start",
+        "frame": "group"
+    },
+    "width": 500,
+    "height": 350,
+    "mark": {
+        "type": "circle",
+        "tooltip": true
+    },
+
+    "encoding": {
+        "x": {
+            "field": "Star Rating",
+            "title": "Star Rating (out of 5)",
+            "type": "quantitative",
+            "scale": {
+                "domain": [
+                    1,
+                    5
+                ]
+            },
+        "axis": {"values": {
+            "expr": "[0,1,2,3,4,5]"
+          }, "grid": true, "zindex": 0, "gridColor": "white"}
+      },            
+        "y": {
+            "field": "Price",
+            "title": "Price (£)",
+            "type": "quantitative",
+            "scale": {
+                "domain": [
+                    0,
+                    60
+                ]
+            }
+        },
+
+        "tooltip": [
+            {
+                "field": "Title"
+            }
+        ]
+ 
+    }
+}

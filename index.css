@@ -74,3 +74,10 @@ img {
 .chart {
   width: 30%;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  padding: 2px;
+}

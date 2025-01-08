@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- This is a link to the vega-lite which we're using to make graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <style>
+
+        #vg-tooltip-element img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <figure id="c1"></figure>
+    </div>
+
+    <script>
+        vegaEmbed('#c1', 'test_tooltip_chart.json')
+    </script>
+
+</body>
+
+
+</html>

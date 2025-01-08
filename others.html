@@ -24,18 +24,18 @@
 
 <body> 
     <!-- The body tag contains the elements that visitors to our page will see. -->
-        <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-            <!-- This is a header, it is the largest text on the page -->
-            Data Visualisation Autumn Term 24/25
-        </h1>
-        <p style="margin-top: 0px; color: darkblue">
-            Wen Qi LOH
-        </p> 
+    <h1 class="big" style="margin-bottom: 0px; text-align: center">
+        Data Visualisation Autumn Term 24/25
+    </h1>
+    <p style="margin-top: 0px; color: darkblue; text-align: center">
+        Wen Qi LOH
+    </p>   
     
         <nav style="text-align: center;">
             <a href="index.html">Home</a> |   
-            <a href="portfolio.html">Portfolio</a> |    
-            <a href="others.html">Other Class Exercises</a> |        
+            <a href="portfolio.html">Portfolio</a> |   
+            <a href="project.html">Project</a> |   
+            <a href="others.html">In-Class Exercises</a> |        
             <a href="https://github.com/wqloh">GitHub</a>
          </nav>
 
@@ -125,6 +125,54 @@
         <figure id="wbapi_interactive"></figure>
     </section>
 
+    <h2>Week 7</h2>
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: The price of a pint</h3>
+        </div>
+        <figure id="pints"></figure>
+    </section>
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: GDP per capita PPP 2021</h3>
+        </div>
+        <figure id="gdp"></figure>
+    </section>
+
+    <h2>Week 8</h2>
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: The price of a lager</h3>
+        </div>
+        <figure id="lager"></figure>
+    </section>
+
+    <h2>Week 9</h2>
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: Making graphs interactive 1</h3>
+        </div>
+        <figure id="interactiveEx1"></figure>
+    </section>
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: Making graphs interactive 2</h3>
+        </div>
+        <figure id="interactiveEx2"></figure>
+    </section>
+    <section>
+        <div class="chart-description">
+            <h3>Graph 3: Making graphs interactive 3 - Look up Transform</h3>
+        </div>
+        <figure id="interactiveEx3"></figure>
+    </section>
+    <section>
+        <div class="chart-description">
+            <h3>Graph 4: Making graphs interactive 4 - Cross-filtering & Cross-highlighting</h3>
+        </div>
+        <figure id="interactiveEx4"></figure>
+    </section>
+
     <script>
     let fig_1 = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"
     let fig_2 = "wk1_declining_pop.json"  
@@ -133,7 +181,15 @@
     let fig_5 = "wk3_goods_services_colab.json" 
     let fig_6 = "wk4_api_renewables.json"
     let fig_7 = "wk5_wbapi.json" 
-    let fig_8 = "wk5_wbapi_interactive.json"
+    let fig_8 = "wk5_wbapi_interactive.json" 
+    let fig_9 = "wk7_point_pints.json" 
+    let fig_10 = "wk7_gdp.json"
+    let fig_11 = "wk8_lager.json" 
+    let fig_12 = "wk9_interactiveEx1.json"
+    let fig_13 = "wk9_interactiveEx2.json"
+    let fig_14 = "wk9_interactiveEx3.json"
+    let fig_15 = "wk9_interactiveEx4.json"
+
     vegaEmbed('#gdp_lifeexpec', fig_1)
     vegaEmbed('#declining_pop', fig_2)
     vegaEmbed('#vices_spending', fig_3)
@@ -142,6 +198,13 @@
     vegaEmbed('#api_renewables', fig_6)
     vegaEmbed('#wbapi', fig_7)
     vegaEmbed('#wbapi_interactive', fig_8)
+    vegaEmbed('#pints', fig_9)
+    vegaEmbed('#gdp', fig_10)
+    vegaEmbed('#lager', fig_11)
+    vegaEmbed('#interactiveEx1', fig_12)
+    vegaEmbed('#interactiveEx2', fig_13)
+    vegaEmbed('#interactiveEx3', fig_14)
+    vegaEmbed('#interactiveEx4', fig_15)
 
     </script>
 

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Rule of Law (RoL) and Environmental Performance Index (EPI) - Asia",
+    "subtitle": ["2014-2024", "Source: World Justice Project, Yale", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/RoL%20EPI%20Asia%202014-2024.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 300,
+  "width": 300,
+  "transform": [{"filter": "datum['EPI'] != 0"}, {"filter": "datum.Year == year"}],
+    "params": [
+    {
+      "name": "year",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2014,
+        "max": 2024,
+        "step": 2,
+        "name": "Year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 150,
+        "opacity": 0.6
+      },
+      "encoding": {
+        "x": {
+          "field": "WJP Rule of Law Index: Overall Score",
+          "type": "quantitative",
+          "scale": {"domain": [0.3, 0.85]},
+          "title": "Rule of Law Score"
+        },
+        "y": {
+          "field": "EPI",
+          "type": "quantitative",
+          "scale": {"domain": [18, 90]},
+          "title": "Environmental Performance Index Score"
+        },
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "scale": {"range": [
+          "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b",
+          "#e377c2", "#7f7f7f", "#bcbd22", "#17becf", "#393b79", "#5254a3",
+          "#6b6ecf", "#9c9ede", "#637939", "#8ca252", "#b5cf6b", "#cedb9c",
+          "#8c6d31", "#bd9e39", "#e7ba52", "#e7cb94", "#843c39", "#ad494a"]},
+          "legend": {"orient": "bottom", "columns": 4},
+          "title": null
+        },
+        "tooltip": [
+          {"field": "Country"},
+          {"field": "Year"},
+          {
+            "field": "WJP Rule of Law Index: Overall Score",
+            "type": "quantitative",
+            "title": "RoL Score"
+          },
+          {"field": "EPI", "type": "quantitative", "title": "EPI Score"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "EPI",
+          "on": "WJP Rule of Law Index: Overall Score",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": "text",
+      "encoding": {
+        "x": {"value": 350},
+        "text": {"field": "R2"},
+        "y": {"value": -15},
+        "tooltip": [{"field": "R2", "type": "nominal", "title": "R-squared"}]
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "EPI",
+          "on": "WJP Rule of Law Index: Overall Score"
+        }
+      ],
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "WJP Rule of Law Index: Overall Score",
+          "type": "quantitative"
+        },
+        "y": {"field": "EPI", "type": "quantitative"},
+        "tooltip": [{"field": "R2", "type": "nominal", "title": "R-squared"}]
+      }
+    }
+  ]
+}

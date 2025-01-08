@@ -1,0 +1,56 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 250,
+    "data": {
+      "url": "https://raw.githubusercontent.com/mclass-user/mclass-user.github.io/refs/heads/main/maps/map_world.geojson",
+      "format": {"property": "features"}
+    },
+    "title": {
+      "text": "GDP per capita",
+      "subtitle": ["PPP 2021 USD", "Source: World Bank"]
+    },
+    "projection": {"type": "naturalEarth1"},
+    "layer": [
+      {
+        "mark": {"type": "geoshape", "fill": "lightgrey"},
+        "transform": [
+          {"filter": "datum.properties.ISO3 != 'ATA'"},
+          {"calculate": "'missing'", "as": "data"}
+        ],
+        "encoding": {
+          "tooltip": [
+            {"field": "properties.COUNTRY", "title": "Country"},
+            {"field": "data"}
+          ]
+        }
+      },
+      {
+        "encoding": {
+          "color": {
+            "field": "value",
+            "scale": {"type": "log"},
+            "legend": {"title": null, "format": "$,.0r"},
+            "type": "quantitative"
+          },
+          "tooltip": [
+            {"field": "Country"},
+            {"field": "value", "title": "GDP pc", "format": "$,.3r"}
+          ]
+        },
+        "mark": {"type": "geoshape"}
+      }
+    ],
+    "transform": [
+      {
+        "lookup": "properties.ISO3",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/mclass-user/mclass-user.github.io/refs/heads/main/maps/world_gdp_per_capita_PPP_wb.csv"
+          },
+          "key": "ISO3",
+          "fields": ["value", "Country"]
+        }
+      }
+    ]
+  }  

@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/w5_mns_cakes.csv"
+    },
+
+    "title": {
+        "text": "Popularity of Marks & Spencer's Cakes",
+        "subtitle": [
+            "Number of user reviews and their ratings (out of 5)",
+            ""
+        ],
+        "anchor": "start",
+        "frame": "group"
+    },
+    "width": 500,
+    "height": 350,
+    "mark": {
+        "type": "circle",
+        "tooltip": true
+    },
+
+    "encoding": {
+        "x": {
+            "field": "rating",
+            "title": "Rating (out of 5)",
+            "type": "quantitative",
+            "scale": {
+                "domain": [
+                    4,
+                    5
+                ]
+            },
+        "axis": {"values": {
+            "expr": "[4, 4.2, 4.4, 4.6, 4.8, 5]"
+          }, "grid": true, "zindex": 0, "gridColor": "white"}
+      },            
+        "y": {
+            "field": "totalReviewCount",
+            "title": "Number of Reviews",
+            "type": "quantitative",
+            "scale": {
+                "domain": [
+                    0,
+                    2600
+                ]
+            }
+        },
+
+        "tooltip": [
+          {"field": "title"}, {"field":"price"}, {"field": "variants", "title": "image"}
+        ]
+    }
+}

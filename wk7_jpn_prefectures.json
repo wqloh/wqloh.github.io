@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 500,
+    "data": {
+      "url": "https://raw.githubusercontent.com/wqloh/wqloh.github.io/refs/heads/main/wk7_japan_prefectures.geojson",
+      "format": {"property": "features"}
+    },
+    "title": {
+      "text": "Prefectures in Japan",
+      "subtitle": ["Source: Code for Japan"]
+    },
+    "projection": {"type": "mercator"},
+    "layer": [
+      {
+        "mark": {"type": "geoshape", "fill": "lightgrey", "stroke": "grey", "strokeWidth": 0.3},
+        "encoding": {
+          "tooltip": [
+            {"field": "properties.NAME", "title": "Prefecture"}
+          ]
+        }
+      }
+    ]
+  } 

@@ -36,25 +36,31 @@
         #chartGrid {
             display: flex;
         }
-        
+
+        #vg-tooltip-element img{
+    width: 100px;
+    height: 100px;
+        }
+
     </style>
 </head>
 
 <body>
 <!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+    <h1 class="big" style="margin-bottom: 0px; text-align: center"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
         <!-- This is a header, it is the largest text on the page -->
         Data Visualisation Autumn Term 24/25
     </h1>
-    <p style="margin-top: 0px; color: darkblue">
+    <p style="margin-top: 0px; color: darkblue; text-align: center">
         <!-- we're setting the margin to 0px so the header and authour name are close together -->
         Wen Qi LOH
     </p>
 
-    <nav style="text-align: center;">
+    <nav style="text-align: center">
         <a href="index.html">Home</a> |   
         <a href="portfolio.html">Portfolio</a> |    
-        <a href="others.html">Other Class Exercises</a> |        
+        <a href="project.html">Project</a> |
+        <a href="others.html">In-Class Exercises</a> |        
         <a href="https://github.com/wqloh">GitHub</a>
         </nav>
 
@@ -155,7 +161,132 @@
         </p>       
         </div>
         <figure id="economist_new"></figure>
-    </section>    
+    </section>  
+    
+    <h2>Challenge 5: Scraping</h2>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: Popularity of Mark's & Spencers' Cakes</h3>
+            <p> 
+                Link to Google colab <a href="https://colab.research.google.com/drive/1C8Dysa2fnPGFH27dgRq6STWA7VIKb7xm?usp=drive_link">here</a>
+            </p> 
+            <p>
+                I initially tried to scrape Amazon and Viator, but found that the data was rather inaccessible behind a wall of code meant to prevent scraping. The M&S website was more accessible.
+            </p>
+        <figure id="scraping_mns"></figure>
+    </section>
+
+    <h2>Challenge 6: Loops. Build a dashboard</h2>
+
+    <section>
+        <p>Link to Google colab <a href="https://colab.research.google.com/drive/1MGy1kDajZlKnWuarQPmUqGhhvXXPCAnV?usp=sharing">here</a></p>
+        <div class="grid-container">
+            <div class="grid-item">
+            <figure id="api_1"></figure>
+            </div>
+            <div class="grid-item">
+            <figure id="api_2"></figure>
+            </div>
+            <div class="grid-item">
+            <figure id="api_3"></figure>
+            </div>
+            <div class="grid-item">
+            <figure id="api_4"></figure>
+            </div>
+            <div class="grid-item">
+            <figure id="api_5"></figure>
+            </div>
+            <div class="grid-item">
+            <figure id="api_6"></figure>
+            </div>
+            <div class="grid-item">
+            <figure id="api_7"></figure>
+            </div>
+            <div class="grid-item">
+            <figure id="api_8"></figure>
+            </div>
+            <div class="grid-item">
+            <figure id="api_9"></figure>
+            </div>
+        </div>
+
+    </section>
+
+    <h2>Challenge 7: Maps</h2>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: Prefectures in Japan</h3>
+        </div>
+            <figure id="jpn_prefectures"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: Positive COVID Cases & Fatalities in Japan</h3>
+            <p> 
+                This map shows the distribution of positive COVID cases (choropleth) and fatalities (points) across Japan over a 2-year period.
+            </p> 
+        </div>
+            <figure id="jpn_covid"></figure>
+    </section>
+
+    </section>
+
+    <h2>Challenge 8: Big Data</h2>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: Price of 1 Serving of DIY Burger</h3>
+            <p> 
+                An interactive chart of the cost of making a beef burger over the years using a recipe on Tesco's website. Click on the legend to focus on a specific ingredient.
+            </p> 
+        </div>
+            <figure id="burger"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: Price of Pork Sausages</h3>
+            <p> 
+                Pork sausages form part of the <a href="https://news.sky.com/story/price-of-british-food-staples-including-cheddar-cheese-porridge-oats-and-white-bread-soar-by-up-to-80-12859533">British basket of staple goods</a>. This map shows how its price has risen across the UK.
+             </p> 
+        </div>
+            <figure id="sausages"></figure>
+    </section>
+
+    <h2>Challenge 9: Analytics Charts</h2>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: Rule of Law & Environmental Performance in Asia</h3>
+        </div>
+            <figure id="analytics_1"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: Price by Neighbourhood of Airbnb vs Hotels/Hostels</h3>
+        </div>
+            <figure id="price_compare"></figure>
+    </section>
+
+    <h2>Challenge 10: Interactive Visualisations</h2>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 1: </h3>
+        </div>
+            <figure id="airbnb_locations"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Graph 2: </h3>
+        </div>
+            <figure id="airbnb_listings"></figure>
+    </section>
 
     <script>
  // Define graphs that we want as variables linked to JSON files       
@@ -166,7 +297,25 @@
         let fig_5 = "wk3_pri_energy_consump.json"
         let fig_6 = "wk3_renewables_worldwide.json" 
         let fig_7 = "wk4_economist_original.json"
-        let fig_8 = "wk4_economist_new.json"
+        let fig_8 = "wk4_economist_new.json" 
+        let fig_9 = "wk5_scraping_new.json"
+        let fig_10 = "Challenge 6 API Looping/chart_L52H.json"
+        let fig_11 = "Challenge 6 API Looping/chart_L52I.json"
+        let fig_12 = "Challenge 6 API Looping/chart_L52J.json"
+        let fig_13 = "Challenge 6 API Looping/chart_L52K.json"
+        let fig_14 = "Challenge 6 API Looping/chart_L52L.json"
+        let fig_15 = "Challenge 6 API Looping/chart_L52M.json"
+        let fig_16 = "Challenge 6 API Looping/chart_L52N.json"
+        let fig_17 = "Challenge 6 API Looping/chart_L52O.json"
+        let fig_18 = "Challenge 6 API Looping/chart_L52P.json"  
+        let fig_19 = "wk9_RoL_EPI.json" 
+        let fig_20 = "wk7_jpn_prefectures.json"
+        let fig_21 = "wk7_jpn_covid.json"
+        let fig_22 = "wk8_burger.json" 
+        let fig_23 = "wk8_sausages.json"
+        let fig_24 = "Project/graph_2_price.json"
+        let fig_25 = "Project/graph_1_airbnb_locations.json"  
+        let fig_26 = "Project/graph_4_airbnb_listings.json"
 
 // Embed graphs in the divs above
         vegaEmbed('#olympics_rep', fig_1) // We're using the vegaEmbed function to put a graph in the element with id fig_1
@@ -177,6 +326,25 @@
         vegaEmbed('#renewables_worldwide', fig_6)
         vegaEmbed('#economist_original', fig_7)
         vegaEmbed('#economist_new', fig_8)
+        vegaEmbed('#scraping_mns', fig_9)
+        vegaEmbed('#api_1', fig_10)
+        vegaEmbed('#api_2', fig_11)
+        vegaEmbed('#api_3', fig_12)
+        vegaEmbed('#api_4', fig_13)
+        vegaEmbed('#api_5', fig_14)
+        vegaEmbed('#api_6', fig_15)
+        vegaEmbed('#api_7', fig_16)
+        vegaEmbed('#api_8', fig_17)
+        vegaEmbed('#api_9', fig_18)
+        vegaEmbed('#analytics_1', fig_19)
+        vegaEmbed('#jpn_prefectures', fig_20)
+        vegaEmbed('#jpn_covid', fig_21)
+        vegaEmbed('#burger', fig_22)
+        vegaEmbed('#sausages', fig_23)
+        vegaEmbed('#price_compare', fig_24)
+        vegaEmbed('#airbnb_locations', fig_25)
+        vegaEmbed('#airbnb_listings', fig_26)
+
     </script>
 </body>
     

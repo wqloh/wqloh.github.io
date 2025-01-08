@@ -6,13 +6,13 @@
            },
 
     "title": {
-        "text": "Renewable energy share in the total final energy consumption",
-        "subtitle": "Worldwide (%)",
+        "text": "Global renewable energy share of total energy consumption (%)",
+        "subtitle": ["Source: World Bank, International Energy Agency", ""],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
         "color": "black"},
-
+    
     "width":300,
     "height":300,
 

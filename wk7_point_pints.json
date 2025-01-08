@@ -1,0 +1,78 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 250,
+    "height": 400,
+    "title": {
+      "text": "The price of a pint",
+      "subtitle": [
+        "One pint of Guinness at every Wetherspoon in the UK",
+        "Source: Wetherspoon App",
+        ""
+      ]
+    },
+    "params": [
+      {
+        "name": "minPrice",
+        "value": 2.8,
+        "bind": {
+          "input": "range",
+          "min": 2.8,
+          "max": 7,
+          "step": 0.1,
+          "name": "Minimum Price:"
+        }
+      },
+      {
+        "name": "maxPrice",
+        "value": 7,
+        "bind": {
+          "input": "range",
+          "min": 2.8,
+          "max": 7,
+          "step": 0.1,
+          "name": "Maximum Price:"
+        }
+      }
+    ],
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mclass-user/mclass-user.github.io/refs/heads/main/maps/UK_Lads.geoJson"
+        },
+        "mark": {
+          "type": "geoshape",
+          "fill": "lightgrey",
+          "opacity": 0.5,
+          "stroke": "black",
+          "strokeWidth": 0.2
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mclass-user/mclass-user.github.io/refs/heads/main/maps/pint_data.csv"
+        },
+        "transform": [
+          {
+            "filter": "datum.guiness_price > minPrice & datum.guiness_price < maxPrice"
+          }
+        ],
+        "mark": {"type": "circle"},
+        "encoding": {
+          "latitude": {"field": "lat", "type": "quantitative"},
+          "longitude": {"field": "long", "type": "quantitative"},
+          "color": {
+            "field": "guiness_price",
+            "type": "quantitative",
+            "legend": {"title": null, "labelExpr": "'£' + datum.label"},
+            "scale": {"domain": [2.8, 7], "scheme": "yellowgreenblue"}
+          },
+          "tooltip": [
+            {"field": "name", "title": "Pub"},
+            {"field": "guiness_price", "title": "Price"},
+            {"field": "town", "title": "Town"},
+            {"field": "isAirport", "title": "Is it an airport?"}
+          ]
+        }
+      }
+    ]
+  }

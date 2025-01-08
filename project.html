@@ -34,7 +34,7 @@
     <a href="https://github.com/wqloh">GitHub</a>
     </nav>
 
-    <h2 style="text-align: center">Perception vs. Reality: Do Airbnbs Truly Unlock More Local, Diverse and Affordable Travel Options for Tourists in London? </h2>
+    <h2 style="text-align: center">Perception vs. Reality: Does Airbnb Truly Unlock More Local, Diverse and Affordable Travel Options for Tourists in London? </h2>
     <section>
        <div class="chart-description">
            <h3>Introduction & Aims</h3>
@@ -124,13 +124,28 @@
     <div class="chart-description">
         <h3>Challenges</h3>
         <p>
-            I could not scrape Airbnb myself as this requires API developer authorisation from Airbnb. Thus, I had to rely on Inside Airbnb's quarterly scraped datasets. While each dataset is comprehensive, I had trouble aligning the Airbnb and Hotel/Hostel datasets in terms of date of stay/scrape: the Airbnb one was scraped on 6 Sep 2024, while I scraped Booking.com on 30 Dec 2024 for a 19-20 Jan 2025 stay. Seasonal differences in prices can affect the visualisations.
+            I could not scrape Airbnb myself as this requires API developer authorisation from Airbnb. Thus, I had to rely on Inside Airbnb's quarterly scraped datasets. While each dataset is comprehensive, I had trouble aligning the Airbnb and Hotel/Hostel datasets in terms of date of stay/scrape: the Airbnb one was scraped on 6 Sep 2024, while I scraped Booking.com on 30 Dec 2024 for a 19-20 Jan 2025 stay. Seasonal differences in prices can affect the visualisations. I tried to tackle this by picking both off-peak travel seasons (Sep and Jan respectively).
         </p>
         <p> 
             Scraping Booking.com was challenging due to the walls of code they have to deter scraping. The list of hotels and hostels on Booking.com is also incomplete, aside from the issue that it only displays a maximum of 1000 listings even though it claims there are more. Thus, where applicable, I compared the 2 datasets using averages (median) and percentages of sample.
         </p>
     </div>
-</section>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h3>Conclusion</h3>
+            <p>
+                Overall, Airbnb meets some of its stated objectives in London. Its listings are far more geographically diverse than hotels and hostels, giving tourists greater choice of location and exposing them to lesser-known attractions. Airbnb also offers some opportunity to connect with locals via private and shared rooms. Even if they do not stay together, at least a small majority of hosts live in London and can provide local tips. Professional property management companies have thankfully not yet taken over London's Airbnb market.
+            </p>
+            <p>
+                However, most Airbnb listings are entire homes or apartments, meaning that few guests stay together with their hosts and connect with them on a deeper level. Additionally, Airbnb has lost part of its initial selling point which is affordability.
+            </p>
+            <p>
+                Airbnb should be invested in preserving its key value propositions of affordability and local connections. The government should be invested in the same as London has among the highest occupancy rates and hotel prices across Europe. Thus, the two should work together to achieve the aforementioned goals. Some potential solutions include reducing barriers to entry for locals in outer neighbourhoods to become Airbnb hosts and imposing rent controls, with the possibility of subsidies to hosts to ensure affordability for guests that does not come at a cost to hosts.
+            </p>
+        </div>
+        </section>
 
    <script>
     let fig_1 = "graph_1_hotels_locations.json"

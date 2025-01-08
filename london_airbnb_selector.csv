@@ -1,4 +1,4 @@
-﻿id,name,picture_url,neighbourhood_cleansed,latitude,longitude,room_type,price,number_of_reviews,review_scores_rating
+﻿id,name,picture_url,neighbourhood,latitude,longitude,room_type,price,number_of_reviews,review_scores_rating
 15400,Bright Chelsea  Apartment. Chelsea!,https://a0.muscache.com/pictures/428392/462d262a_original.jpg,Kensington and Chelsea,51.4878,-0.16813,Entire home/apt,120,96,4.8
 33332,Beautiful Ensuite Richmond-upon-Thames borough,https://a0.muscache.com/pictures/miso/Hosting-33332/original/c84d254b-8a96-4872-a2ff-23627105d01c.jpeg,Richmond upon Thames,51.4641,-0.32498,Private room,140,19,4.37
 117203,A stylish Victorian home in West London,https://a0.muscache.com/pictures/d2e37be3-d606-469c-a601-7dd5a2ed03e4.jpg,Hammersmith and Fulham,51.50155001,-0.233002224,Entire home/apt,131,91,4.85

@@ -47,7 +47,7 @@
       "field": "Accoms Type", 
       "type": "nominal",
       "scale":{"range":["#e6224b", "#179fdb"]},
-      "legend":{"orient": "top"}
+      "legend": null
      }
  },
 
